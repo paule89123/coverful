@@ -1,0 +1,271 @@
+<html>
+
+<head>
+	<title>Space Butterfly</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chango|New+Rocker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One|Gaegu|Geo|Knewave|Major+Mono+Display|Megrim|Modak|Montserrat+Subrayada|Sue+Ellen+Francisco|ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alata|Anaheim|Jacques+Francois+Shadow|Josefin+Sans|Julius+Sans+One|Mansalva|Proza+Libre&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="color"></div>
+
+<div id="banner">
+	<!-- <img id="logo" src="logo-transparent.png"> -->
+
+<div id="logo-text">COVERFUL</div>
+<!-- <img id="rainbow-icon" src="rainbow.svg"> -->
+
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search covers..." name="search">
+  <button id="search-icon" type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<!-- NAV FOR MOBILE-->
+<nav class="nav-mobile">
+    <ul>
+      <li>
+        <a id="active" href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="biography.html">Biography</a>
+      </li>
+      <li>
+        <a href="schedule.html">Schedule</a>
+      </li>
+      <li>
+        <a href="gallery.html">Gallery</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+
+    <div class="burger">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+            <div id="line4" class="line"></div>
+            <div id="line5" class="line"></div>
+    </div>
+</nav>
+
+<div id="invisible-box"></div>
+
+
+<!-- NAV FOR DESKTOP-->
+<nav class="nav-desktop">
+    <ul>
+      <li>
+        <a id="active" href="index.html">Products</a>
+      </li>
+      <li>
+        <a href="biography.html">Shipping & Payment</a>
+      </li>
+      <li>
+        <a href="schedule.html">More</a>
+      </li>
+    </ul>
+</nav>
+
+<div id="white-gradient"></div>
+
+</div>
+
+
+
+
+
+
+
+<main>
+
+
+<div class="product-component" id='product-component-1579905398903'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'spacebutterflyuk.myshopify.com',
+      storefrontAccessToken: '38f835659431459cebffcd078fa762c4',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4497584783493',
+        node: document.getElementById('product-component-1579905398903'),
+        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-family": "futura, sans-serif",
+        "font-weight": "normal",
+        "font-size": "26px",
+        "color": "#1e3264"
+      },
+      "button": {
+        "font-family": "futura, sans-serif",
+        ":hover": {
+          "background-color": "#58a34e"
+        },
+        "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+        ":focus": {
+          "background-color": "#58a34e"
+        },
+        "border-radius": "3px",
+        "padding-left": "82px",
+        "padding-right": "82px"
+      },
+      "price": {
+        "font-family": "futura, sans-serif",
+        "font-size": "18px",
+        "color": "#1e3264"
+      },
+      "compareAt": {
+        "font-family": "futura, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#1e3264"
+      },
+      "unitPrice": {
+        "font-family": "futura, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#1e3264"
+      },
+      "description": {
+        "font-family": "futura, sans-serif",
+        "color": "#1e3264"
+      }
+    },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#58a34e"
+        },
+        "background-color": "#62b557",
+        ":focus": {
+          "background-color": "#58a34e"
+        },
+        "border-radius": "11px",
+        "padding-left": "82px",
+        "padding-right": "82px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#58a34e"
+        },
+        "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+        "font-family": "futura, sans-serif",
+        ":focus": {
+          "background-color": "#58a34e"
+        },
+        "border-radius": "3px",
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "popup": false
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#62b557",
+        ":hover": {
+          "background-color": "#58a34e"
+        },
+        ":focus": {
+          "background-color": "#58a34e"
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+
+
+</script>
+
+
+</main>
+	<!-- <script src="index.js"></script> -->
+
+
+</body>
+</html>
