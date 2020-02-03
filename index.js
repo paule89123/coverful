@@ -234,7 +234,7 @@ var x = event.keyCode;
         document.getElementById('text-container').style.display = "block"; 
     }
 
-    // function to load search results (but only if the screen has already been cleared first)
+    // function to load search results
     if(uniqueResults.length>0) {
       (function () {
           document.getElementById('go-back-message').style.display = "none";
