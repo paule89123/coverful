@@ -1,0 +1,501 @@
+<html>
+
+<head>
+  <title>Coverful</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Anaheim|Jacques+Francois+Shadow|Josefin+Sans|Julius+Sans+One|Mansalva|Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fixed-blue-gradient"></div>
+    <div id="banner">
+        <!-- <img id="logo" src="logo-transparent.png"> -->
+        <div id="logo-text">COVERFUL</div>
+        <!-- <img id="logo-icon" src="logo2.png"> -->
+
+        <div id="search-bar">
+            <input type="text" placeholder="Search covers..." name="search" id="search-field">
+            <button id="search-icon" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <!-- NAV FOR MOBILE-->
+        <nav class="nav-mobile">
+            <ul>
+              <li>
+                <a id="active" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="biography.html">Biography</a>
+              </li>
+              <li>
+                <a href="schedule.html">Schedule</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <div class="burger">
+                    <div id="line1" class="line"></div>
+                    <div id="line2" class="line"></div>
+                    <div id="line3" class="line"></div>
+                    <div id="line4" class="line"></div>
+                    <div id="line5" class="line"></div>
+            </div>
+        </nav>
+
+        <div id="invisible-box"></div>
+
+        <!-- NAV FOR DESKTOP-->
+        <nav class="nav-desktop">
+            <ul>
+              <li><a>Browse Products</a>
+                  <ul class="submenu" id="submenu1">
+                      <div class="small-triangle"></div>
+                      <li class="submenu-item"><a href="new.html"><div class="nav-link">New In</div></a></li>
+                      <li class="submenu-item"><a href="popular.html"><div class="nav-link">Most Popular</div></a></li>
+                      <li class="submenu-item"><a><div class="nav-link">Browse By Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></div></a>
+                          <ul class="submenu" id="submenu2">
+                              <li class="submenu-item"><a href="abstract.html"><div class="nav-link">Abstract</div></a></li>
+                              <li class="submenu-item"><a href="adult-humour.html"><div class="nav-link">Adult Humour</div></a></li>
+                              <li class="submenu-item"><a><div class="nav-link">Animals &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></div></a>
+                                  <ul class="submenu" id="submenu3">
+                                      <li class="submenu-item"><a href="animals.html"><div class="nav-link">All Animals</div></a></li>
+                                      <li class="submenu-item"><a href="birds.html"><div class="nav-link">Birds</div></a></li>
+                                      <li class="submenu-item"><a href="cats.html"><div class="nav-link">Cats</div></a></li>
+                                      <li class="submenu-item"><a href="dogs.html"><div class="nav-link">Dogs</div></a></li>
+                                      <li class="submenu-item"><a href="farm-animals.html"><div class="nav-link">Farm Animals</div></a></li>
+                                      <li class="submenu-item"><a href="sea-life.html"><div class="nav-link">Fish / Sea Life </div></a></li>
+                                      <li class="submenu-item"><a href="insects.html"><div class="nav-link">Insects</div></a></li>
+                                      <li class="submenu-item"><a href="wild-animals.html"><div class="nav-link">Wild Animals</div></a></li>
+                                  </ul>
+                              </li>
+                              <li class="submenu-item"><a href="anime.html"><div class="nav-link">Anime</div></a></li>
+                              <li class="submenu-item"><a href="famous-faces.html"><div class="nav-link">Famous Faces</div></a></li>
+                              <li class="submenu-item"><a href="film.html"><div class="nav-link">Film/TV</div></a></li>
+                              <li class="submenu-item"><a href="floral.html"><div class="nav-link">Floral</div></a></li>
+                              <li class="submenu-item"><a href="food.html"><div class="nav-link">Food</div></a></li>
+                              <li class="submenu-item"><a href="geometric-patterns.html"><div class="nav-link">Geometric Patterns</div></a></li>
+                              <li class="submenu-item"><a href="japanese-art.html"><div class="nav-link">Japanese Art</div></a></li>
+                              <li class="submenu-item"><a href="magic-sequin-covers.html"><div class="nav-link">Magic Sequin Covers</div></a></li>
+                              <li class="submenu-item"><a href="music.html"><div class="nav-link">Music</div></a></li>
+                              <li class="submenu-item"><a href="nautical.html"><div class="nav-link">Nautical/Marine</div></a></li>
+                              <li class="submenu-item"><a href="novelty.html"><div class="nav-link">Novelty</div></a></li>
+                              <li class="submenu-item"><a href="pop-art.html"><div class="nav-link">Pop Art</div></a></li>
+                              <li class="submenu-item"><a href="personalised.html"><div class="nav-link">Personalised Designs</div></a></li>
+                              <li class="submenu-item"><a href="surreal.html"><div class="nav-link">Surreal</div></a></li>
+                          </ul>
+                      </li>
+                      <li class="submenu-item"><a href="sale.html"><div class="nav-link" id="sale">Sale</div></a></li>
+                  </ul>
+              </li>
+              <li><a id="active" href="create-your-own.html">Create Your Own Cover</a></li>
+              <li><a href="shipping-and-payment.html">Shipping & Payment</a></li>
+              <li><a href="">More</a>
+                  <ul class="submenu" id="submenu4">
+                      <div class="small-triangle" id="second-small-triangle"></div>
+                      <li class="submenu-item"><a href="about.html"><div class="nav-link">About Us</div></a></li>
+                      <li class="submenu-item"><a href="refunds-returns.html"><div class="nav-link">Refunds & Returns</div></a></li>
+                      <li class="submenu-item"><a href="contact.html"><div class="nav-link">Contact</div></a></li>
+                  </ul>
+              </li>
+            </ul>
+        </nav>
+
+<!--         <div id="nav-dropdown-1-container">
+            <div class="nav-dropdown-1-item">New In</div>
+            <div class="nav-dropdown-1-item">Most Popular</div>
+            <div class="nav-dropdown-1-item">Sale</div>
+            <div class="nav-dropdown-1-item">Browse By Category</div>
+        </div> -->
+
+
+
+
+        <!-- <div id="coloured-gradient-strip"></div> -->
+    </div>
+
+    <main>
+        <div style="display: none; background-image: none" id="text-container">
+            <div id="page-title-2"></div>
+            <div id="page-title-3"></div>
+        </div>
+
+        <div id='search-results-text'></div>
+        <div id='search-results-text-unsuccessful'></div>
+        <div id='collection-component'></div>
+        <div id="large-white-box"></div>
+        <div id="breadcrumbs">
+            <div><a href="home.html">Home</a></div>
+            <div>/</div>
+            <div><a href="create-your-own.html">Create Your Own Cover</a></div>
+        </div>
+        <a id="go-back"><div id="go-back-message">Take me back</div></a>
+    </main>
+
+
+
+    <script>
+
+    let collectionID = "";
+    let pageID = "Create Your Own Cover";
+    let pageLink = "create-your-own.html";
+
+    (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            // function loading() {
+          // document.getElementById('collection-component').innerHTML = "Loading";
+            // }
+            script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            // script.onprogress = loading();
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+                document.getElementById('collection-component').innerHTML = "";
+
+            // (document.getElementsByTagName('head')[0]).replaceChild(script, "0");
+            var client = ShopifyBuy.buildClient({
+              domain: 'spacebutterflyuk.myshopify.com',
+              storefrontAccessToken: '38f835659431459cebffcd078fa762c4',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              // ui.replaceComponent('productSet');
+              ui.createComponent('collection', {
+                id: [],
+                node: document.getElementById('collection-component'),
+                moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "user-select": "none",
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(33.33333% - 30px)",
+                  "margin-left": "30px",
+                  "margin-bottom": "50px",
+                  "width": "calc(33.33333% - 30px)"
+                },
+                "img": {
+                  "height": "calc(100% - 15px)",
+                  "position": "absolute",
+                  "left": "0",
+                  "right": "0",
+                  "top": "0"
+                },
+                "imgWrapper": {
+                  "padding-top": "calc(75% + 15px)",
+                  "position": "relative",
+                  "height": "0"
+                }
+              },
+              "title": {
+                "font-family": "futura, sans-serif",
+                "color": "#1e3264",
+                "font-weight": "400",
+                "font-size": "18px"
+              },
+              "button": {
+                // "opacity": "0",
+                "font-family": "futura, sans-serif",
+                "font-weight": "bold",
+                "color": "white",
+                "font-size": "12px",
+                ":hover": {
+                  "color": "#115500",
+                  "background-color": "#0f4d00"
+                },
+                "background-color": "black",
+                ":focus": {
+                  "background-color": "#0f4d00"
+                },
+                "border-radius": "1px",
+                "padding-left": "15px",
+                "padding-right": "15px"
+              },
+              "price": {
+                "font-family": "futura, sans-serif",
+                // "font-weight": "bold",
+                "color": "#1e3264"
+              },
+              "compareAt": {
+                "font-family": "futura, sans-serif",
+                // "font-weight": "bold",
+                "color": "#1e3264"
+              },
+              "unitPrice": {
+                "font-family": "futura, sans-serif",
+                "font-weight": "bold",
+                "color": "#1e3264"
+              },
+              "description": {
+                "font-family": "futura, sans-serif",
+                "color": "#c92929"
+              },
+            },
+            "buttonDestination": "modal",
+            "contents": {
+              "options": false,
+              "button": false,
+            },
+                  "isButton": "true",
+
+
+            "text": {
+              "button": "View product"
+            },
+
+            "googleFonts": [
+              "Vollkorn"
+            ]
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-30px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px",
+                  "user-select": "none"
+                }
+              },
+              "img": {
+                "width": "400px",
+              },
+              "button": {
+                "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+                "font-size": "12px",
+                // "font-weight": "500",
+                "font-family": "futura, sans-serif",
+                "color": "white",
+                ":hover": {
+                  "color": "#1e3264",
+                  "background-color": "#0f4d00"
+                },
+                "background-color": "#115500",
+                ":focus": {
+                  "background-color": "#0f4d00"
+                },
+                "border-radius": "0px",
+                "padding": "15px 105px 15px 105px",
+              },
+              "title": {
+                "font-family": "futura, sans-serif",
+                "font-size": "26px",
+                "font-weight": "normal",
+                "color": "#1e3264"
+              },
+              "price": {
+                "font-family": "futura, sans-serif",
+                "font-size": "16px",
+                "color": "#1e3264"
+              },
+              "compareAt": {
+                "font-family": "futura, sans-serif",
+                "font-size": "12px",
+                "color": "#1e3264"
+              },
+              "unitPrice": {
+                "font-family": "futura, sans-serif",
+                "color": "#1e3264"
+              },
+              "description": {
+                "font-family": "futura, sans-serif",
+                "font-size": "16px",
+                "color": "#1e3264"
+              }
+            },
+            "googleFonts": [
+              "Vollkorn"
+            ],
+            "text": {
+              "button": "ADD TO CART",
+            }
+          },
+          "modal": {
+            "styles": {
+              "modal": {
+                "user-select": "none",
+                "background-color": "white",
+                // "border": "30px solid black",
+                "border-radius": "15px",
+                "box-shadow": "0px 0px 100px rgba(0,0,0,0.2)"
+
+              }
+            }
+          },
+          "cart": {
+            "styles": {
+              "button": {
+                "font-family": "futura, sans-serif",
+                // "font-weight": "bold",
+                "color": "white",
+                ":hover": {
+                  "color": "#115500",
+                  "background-color": "#0f4d00"
+                },
+                "background-color": "rgb(0,0,0,0.9)",
+                ":focus": {
+                  "background-color": "#0f4d00"
+                },
+                "border-radius": "0px"
+              },
+              "title": {
+                "color": "#353535"
+              },
+              "header": {
+                "color": "#353535"
+              },
+              "lineItems": {
+                "color": "#353535"
+              },
+              "subtotalText": {
+                "color": "#353535"
+              },
+              "subtotal": {
+                "color": "#353535"
+              },
+              "notice": {
+                "color": "#353535"
+              },
+              "currency": {
+                "color": "#353535"
+              },
+              "close": {
+                "color": "#353535",
+                ":hover": {
+                  "color": "#353535"
+                }
+              },
+              "empty": {
+                "color": "#353535"
+              },
+              "noteDescription": {
+                "color": "#353535"
+              },
+              "discountText": {
+                "color": "#353535"
+              },
+              "discountIcon": {
+                "fill": "#353535"
+              },
+              "discountAmount": {
+                "color": "#353535"
+              }
+            },
+            "text": {
+              "total": "Subtotal",
+              "button": "Checkout"
+            },
+            "googleFonts": [
+              "Vollkorn"
+            ]
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-family": "futura, sans-serif",
+                // "font-weight": "bold",
+                "background-color": "#c3f0c8",
+                "border-radius": "0px",
+                // "position": "fixed",
+                // "top": "-100px",
+                ":hover": {
+                "background-color": "#c3f0c8",
+                "filter": "brightness(1.1)"
+                },
+                ":focus": {
+                  "background-color": "#0f4d00"
+                }
+              },
+              "count": {
+                "color": "#1e3264",
+              },
+              "iconPath": {
+                "fill": "#1e3264"
+              }
+            },
+            "googleFonts": [
+              "Vollkorn"
+            ]
+          },
+          "lineItem": {
+            "styles": {
+              "variantTitle": {
+                "color": "#353535"
+              },
+              "title": {
+                "color": "#353535"
+              },
+              "price": {
+                "color": "#353535"
+              },
+              "fullPrice": {
+                "color": "#353535"
+              },
+              "discount": {
+                "color": "#353535"
+              },
+              "discountIcon": {
+                "fill": "#353535"
+              },
+              "quantity": {
+                "color": "#353535"
+              },
+              "quantityIncrement": {
+                "color": "#353535",
+                "border-color": "#353535"
+              },
+              "quantityDecrement": {
+                "color": "#353535",
+                "border-color": "#353535"
+              },
+              "quantityInput": {
+                "color": "#353535",
+                "border-color": "#353535"
+              }
+            }
+          }
+        },
+              });
+            });
+          }
+        })();
+
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>
