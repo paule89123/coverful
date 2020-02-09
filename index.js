@@ -171,7 +171,17 @@ let cushionCoversIdList = [
 
 const searchBar = document.getElementById('search-field');
 
+if(pageID === "Home" || pageID === "Browse By Category") {
+      document.getElementById('collection-component').style.display = "none";
+      document.getElementById('large-white-box').style.display = "none";
+}
+
+
+
 searchBar.addEventListener('keyup', function(e) {   
+
+
+
 
 
 
@@ -181,6 +191,22 @@ var x = event.keyCode;
     if (x<91) {
 
 
+
+
+
+if(pageID === "Home" || pageID === "Browse By Category") {
+      document.getElementById('collection-component').style.display = "block";
+      document.getElementById('large-white-box').style.display = "block";
+      
+}
+
+if(pageID === "Browse By Category") {
+      document.getElementById('browse-page-contents').style.display = "none";
+}
+
+if(pageID === "Home") {
+      document.getElementById('homepage-contents').style.display = "none";
+}
 
 
     const searchEntryStr = e.target.value;
@@ -223,7 +249,6 @@ var x = event.keyCode;
       }
     }
 
-    // pageID = "celebs"
 
     document.getElementById('text-container').style.display = "none"; 
 
@@ -238,10 +263,7 @@ var x = event.keyCode;
       `<span id="sorry">Sorry we couldn't find anything to match your search  <br>"` + searchEntryStr + '"</span>' 
       + "<br><br><br>Can't find what you're looking for? <br>Why not <a href='create-your-own.html' id='create-your-own'>Create Your Own?</a>";
 
-
       document.getElementById('go-back').setAttribute('href', pageLink);
-
-
 
     }
 
@@ -268,7 +290,24 @@ var x = event.keyCode;
         document.getElementById('breadcrumbs').style.visibility = "visible";
         document.getElementById('go-back-message').style.display = "none";
         document.getElementById('search-results-text').innerHTML = "";
-        document.getElementById('text-container').style.display = "block"; 
+        document.getElementById('text-container').style.display = "block";        
+
+      if(pageID === "Home" || pageID === "Browse By Category") {
+        document.getElementById('breadcrumbs').style.visibility = "none";
+        document.getElementById('go-back-message').style.display = "none";
+        document.getElementById('search-results-text').innerHTML = "";
+        document.getElementById('text-container').style.display = "none"; 
+        document.getElementById('collection-component').style.display = "none";
+        document.getElementById('large-white-box').style.display = "none";
+      }
+
+if(pageID === "Browse By Category") {
+      document.getElementById('browse-page-contents').style.display = "block";
+}
+
+if(pageID === "Home") {
+      document.getElementById('homepage-contents').style.display = "block";
+}
     }
 
     // function to load search results
@@ -475,6 +514,7 @@ var x = event.keyCode;
           "modal": {
             "styles": {
               "modal": {
+                // "outline": "10px solid red",
                 "user-select": "none",
                 "background-color": "white",
                 // "border": "30px solid black",
@@ -978,3 +1018,5 @@ var x = event.keyCode;
             });
           }
         })();
+
+

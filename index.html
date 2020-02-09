@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Alata|Anaheim|Jacques+Francois+Shadow|Josefin+Sans|Julius+Sans+One|Mansalva|Proza+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/fontawesome.min.css">
+        <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/solid.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="fixed-blue-gradient"></div>
     <div id="banner">
-        <!-- <img id="logo" src="logo-transparent.png"> -->
-        <div id="logo-text">COVERFUL</div>
+        <!-- <img id="logo" src="logo.png"> -->
+        <a id="home-link" href="index.html"><div id="logo-text">COVERFUL</div></a>
         <!-- <img id="logo-icon" src="logo2.png"> -->
 
         <div id="search-bar">
@@ -56,7 +59,7 @@
         <!-- NAV FOR DESKTOP-->
         <nav class="nav-desktop">
             <ul>
-              <li><a id="active">Browse Products</a>
+              <li><a href="categories.html">Browse Products</a>
                   <ul class="submenu" id="submenu1">
                       <div class="small-triangle"></div>
                       <li class="submenu-item"><a href="new.html"><div class="nav-link">New In</div></a></li>
@@ -122,7 +125,23 @@
         <div id="large-white-box"></div>
         <div id="breadcrumbs"></div>
         <a id="go-back"><div id="go-back-message">Take me back</div></a>
+
     </main>
+        <!-- <div id="free-shipping-banner"><i class="fas fa-shipping-fast"></i> Free shipping on all orders</div> -->
+
+    <div id="homepage-contents">
+        <div id="purple-circle"></div>
+        <div id="purple-circle1"></div>
+        <div id="blue-circle1"></div>
+        <div id="blue-circle"></div>
+        <div id="welcome-text">Welcome To The Wonderful World Of</div>
+        <div id="coverful-text">COVERFUL</div>
+        <div id="boutique-text">Cushion Cover Boutique</div>
+        <div id="hundreds-text">
+            <br>Hundreds of inspiring designs and styles to suit any taste<br><br>
+            <button type="button" onclick="location.href='categories.html'" id="homepage-button">Browse Our Cushion Covers</button>
+        </div>
+    </div>
 
 
     <script>
