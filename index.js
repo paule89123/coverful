@@ -156,6 +156,53 @@ let cushionCoversIdList = [
   "Orange Starfish", 4529038327941,
   "Shell", 4529040064645,
 
+  "Picasso 1", 4559937405061,
+
+  "Harlequin With Guitar by Picasso", 4559937405061,
+  "Woman In A Shawl by Picasso", 4559942910085,
+  "The Old Guitarist by Picasso", 4559946154117,
+  "The Matador by Picasso", 4559959294085,
+  "Woman Crying by Picasso", 4559966863493,
+  "Les Demoiselles d'Avignon by Picasso", 4559992553605,
+  "La Muse by Picasso", 4560022470789,
+  "Courtsean With Necklace Of Gems by Picasso", 4560039084165,
+  "Harlequin by Picasso", 4560051372165,
+  "Claude With A Ball by Picasso", 4560285368453,
+  "The Yellow Shirt by Picasso", 4560289562757,
+  "Marie-Therese Walter by Picasso", 4560292348037,
+  "Les Femmes d'Alger by Picasso", 4560298082437,
+  "Three Musicians by Picasso", 4560332226693,
+  "Girl Before A Mirror by Picasso", 4560334291077,
+
+  "Nautical Set of 5 (Design 1)", 4560359686277,
+  "Nautical Set of 5 (Design 2)", 4560363225221,
+  "Nautical Set of 5 (Design 3)", 4560380788869,
+  "Nautical Set of 5 (Design 4)", 4560359686277,
+  "Nautical Set of 5 (Design 5)", 4560384589957,
+  "Nautical Set of 5 (Design 6)", 4560386130053,
+  "Nautical Set of 5 (Design 7)", 4560387408005,
+  "Nautical Set of 5 (Design 8)", 4560388784261,
+
+  "As High As Honor (Game Of Thrones)", 4560671867013,
+  "Family Duty Honor (Game Of Thrones)", 4560676388997,
+  "Fire And Blood (Game Of Thrones)", 4560677798021,
+  "Hear Me Roar (Game Of Thrones)", 4560678944901,
+  "Our Blades Are Sharp (Game Of Thrones)", 4560683663493,
+  "Ours Is The Fury (Game Of Thrones)", 4560688971909,
+  "Unbowed Unbent Unbroken (Game Of Thrones)", 4560693297285,
+  "We Do Not Sow (Game Of Thrones)", 4560696737925,
+  "Winter Is Coming (Game Of Thrones)", 4560700702853,
+  "C-3PO (Star Wars)", 4560705683589,
+  "Darth Vader (Star Wars)", 4560710271109,
+  "Millenium Falcon (Star Wars)", 4560715677829,
+  "R2-D2 (Star Wars)", 4560719839365,
+  "Walker (Star Wars)", 4560723837061,
+  "Star Wars Logo", 4560727933061,
+  "Stormtrooper (Star Wars) Design 1", 4560737140869,
+  "Stormtrooper (Star Wars) Design 2", 4560742023301,
+  "Yoda (Star Wars)", 4560749133957,
+
+
 
   "undefined", "undefined"
   // undefined is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
@@ -171,7 +218,7 @@ let cushionCoversIdList = [
 
 const searchBar = document.getElementById('search-field');
 
-if(pageID === "Home" || pageID === "Browse By Category") {
+if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
       document.getElementById('collection-component').style.display = "none";
       document.getElementById('large-white-box').style.display = "none";
 }
@@ -194,19 +241,24 @@ var x = event.keyCode;
 
 
 
-if(pageID === "Home" || pageID === "Browse By Category") {
+if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals") {
       document.getElementById('collection-component').style.display = "block";
       document.getElementById('large-white-box').style.display = "block";
       
 }
 
-if(pageID === "Browse By Category") {
+if(pageID === "Browse By Category" || pageID === "Animals") {
       document.getElementById('browse-page-contents').style.display = "none";
 }
 
 if(pageID === "Home") {
       document.getElementById('homepage-contents').style.display = "none";
 }
+
+if(pageID === "Shipping & Payment") {
+      document.getElementById('shipping-page-contents').style.display = "none";
+}
+
 
 
     const searchEntryStr = e.target.value;
@@ -292,8 +344,8 @@ if(pageID === "Home") {
         document.getElementById('search-results-text').innerHTML = "";
         document.getElementById('text-container').style.display = "block";        
 
-      if(pageID === "Home" || pageID === "Browse By Category") {
-        document.getElementById('breadcrumbs').style.visibility = "none";
+      if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
+        document.getElementById('breadcrumbs').style.visibility = "hidden";
         document.getElementById('go-back-message').style.display = "none";
         document.getElementById('search-results-text').innerHTML = "";
         document.getElementById('text-container').style.display = "none"; 
@@ -301,14 +353,21 @@ if(pageID === "Home") {
         document.getElementById('large-white-box').style.display = "none";
       }
 
-if(pageID === "Browse By Category") {
-      document.getElementById('browse-page-contents').style.display = "block";
-}
+      if(pageID === "Browse By Category" || pageID === "Animals") {
+            document.getElementById('browse-page-contents').style.display = "block";
+      }
 
-if(pageID === "Home") {
-      document.getElementById('homepage-contents').style.display = "block";
-}
-    }
+      if(pageID === "Home") {
+            document.getElementById('homepage-contents').style.display = "block";
+      }
+
+      if(pageID === "Shipping & Payment") {
+        document.getElementById('shipping-page-contents').style.display = "block";
+        document.getElementById('go-back-message').style.display = "none";
+        document.getElementById('search-results-text').innerHTML = "";
+        document.getElementById('text-container').style.display = "none"; 
+      }
+  }
 
     // function to load search results
     if(uniqueResults.length>0) {

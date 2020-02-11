@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Alata|Anaheim|Jacques+Francois+Shadow|Josefin+Sans|Julius+Sans+One|Mansalva|Proza+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/fontawesome.min.css">
+        <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/solid.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="fixed-blue-gradient"></div>
     <div id="banner">
-        <!-- <img id="logo" src="logo-transparent.png"> -->
+        <!-- <img id="logo" src="logo.png"> -->
         <a id="home-link" href="index.html"><div id="logo-text">COVERFUL</div></a>
         <!-- <img id="logo-icon" src="logo2.png"> -->
 
@@ -56,7 +59,7 @@
         <!-- NAV FOR DESKTOP-->
         <nav class="nav-desktop">
             <ul>
-              <li><a href="categories.html">Browse Products</a>
+              <li><a id="active" href="categories.html">Browse Products</a>
                   <ul class="submenu" id="submenu1">
                       <div class="small-triangle"></div>
                       <li class="submenu-item"><a href="new.html"><div class="nav-link">New In</div></a></li>
@@ -107,31 +110,60 @@
 
 
     <main>
-        <div id="text-container">
-            <div id="page-title-2">Sea Life</div>
-            <div id="page-title-3">Weird and wonderful, or just plain wacky - our selection of surreal covers <br>are perfect for expressing the stranger side of life</div>
+        <div style="display: none; background-image: none" id="text-container">
+            <div id="page-title-2"></div>
+            <div id="page-title-3"></div>
         </div>
         <div id='search-results-text'></div>
         <div id='search-results-text-unsuccessful'></div>
         <div id='collection-component'></div>
         <div id="large-white-box"></div>
-        <div id="breadcrumbs">
-            <div><a href="index.html">Home</a></div>
-            <div>/</div>
-            <div><a href="categories.html">Categories</a></div>
-            <div>/</div>
-            <div><a href="animals.html">Animals</a></div>
-            <div>/</div>
-            <div><a href="surreal.html">Sea Life</a></div>
-        </div>
+        <div id="breadcrumbs"></div>
         <a id="go-back"><div id="go-back-message">Take me back</div></a>
+
     </main>
+        <!-- <div id="free-shipping-banner"><i class="fas fa-shipping-fast"></i> Free shipping on all orders</div> -->
+
+
+<div id="browse-page-contents">
+    <div id="purple-circle"></div>
+    <div id="purple-circle1"></div>
+    <div id="blue-circle1-container">
+        <div id="blue-circle1"></div>
+    </div>
+    <div id="blue-circle"></div>
+
+    <div id="select-category-text">Select a Category</div>
+
+    <div id="buttons-container">
+        <div class="button-row-container">            
+            <button type="button" onclick="location.href='all-animals.html'" class="categories-button">All Animals</button>
+            <button type="button" onclick="location.href='birds.html'" class="categories-button">Birds</button>
+            <button type="button" onclick="location.href='cats.html'" class="categories-button">Cats</button>
+        </div>
+        <div class="button-row-container">            
+            <button type="button" onclick="location.href='dogs.html'" class="categories-button">Dogs</button>
+            <button type="button" onclick="location.href='farm-animals.html'" class="categories-button">Farm Animals</button>
+            <button type="button" onclick="location.href='sea-life.html'" class="categories-button">Sea Life</button>
+        </div>
+        <div class="button-row-container">            
+            <button type="button" onclick="location.href='insects.html'" class="categories-button">Insects</button>
+            <button type="button" onclick="location.href='wild-animals.html'" class="categories-button">Wild Animals</button>
+        </div>
+    </div>
+
+<a id="back-a-step" href="categories.html"><div id="back-a-step-div"><i class="fa fa-chevron-left" aria-hidden="true"></i> Go back a step</div></a>
+
+    
+</div>
+
+ 
 
 
     <script>
-        let collectionID = "166881263749";
-        let pageID = "Sea Life";
-        let pageLink = "sea-life.html";
+        let collectionID = [];
+        let pageID = "Animals";
+        let pageLink = "animals.html";
     </script>
 
     <script src="index.js"></script>
