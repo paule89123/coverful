@@ -156,8 +156,6 @@ let cushionCoversIdList = [
   "Orange Starfish", 4529038327941,
   "Shell", 4529040064645,
 
-  "Picasso 1", 4559937405061,
-
   "Harlequin With Guitar by Picasso", 4559937405061,
   "Woman In A Shawl by Picasso", 4559942910085,
   "The Old Guitarist by Picasso", 4559946154117,
@@ -177,7 +175,7 @@ let cushionCoversIdList = [
   "Nautical Set of 5 (Design 1)", 4560359686277,
   "Nautical Set of 5 (Design 2)", 4560363225221,
   "Nautical Set of 5 (Design 3)", 4560380788869,
-  "Nautical Set of 5 (Design 4)", 4560359686277,
+  "Nautical Set of 5 (Design 4)", 4560383082629,
   "Nautical Set of 5 (Design 5)", 4560384589957,
   "Nautical Set of 5 (Design 6)", 4560386130053,
   "Nautical Set of 5 (Design 7)", 4560387408005,
@@ -204,8 +202,8 @@ let cushionCoversIdList = [
 
 
 
-  "undefined", "undefined"
-  // undefined is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
+  "", ""
+  // these empty strings is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
   ];
 
   // the following for statement converts all the strings in the cushionCoversIdList array to lowercase
@@ -221,47 +219,124 @@ const searchBar = document.getElementById('search-field');
 if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
       document.getElementById('collection-component').style.display = "none";
       document.getElementById('large-white-box').style.display = "none";
+      document.getElementById("search-results").style.backdropFilter = "blur(40px)";
+      document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.05)";
 }
 
 
-
-searchBar.addEventListener('keyup', function(e) {   
-
-
-
+let shippingCircle = document.getElementById('shipping-circle');
+let contactCircle = document.getElementById('contact-circle');
+let facebookCircle = document.getElementById('facebook-circle');
 
 
+shippingCircle.addEventListener("mouseover", hideContactCircle);
+shippingCircle.addEventListener("mouseleave", showContactCircle);
+
+shippingCircle.addEventListener("mouseover", hideFacebookCircle);
+shippingCircle.addEventListener("mouseleave", showFacebookCircle);
+
+contactCircle.addEventListener("mouseover", hideFacebookCircle);
+contactCircle.addEventListener("mouseleave", showFacebookCircle);
 
 
-var x = event.keyCode;
-  if (x === 8 || x === 13 || x === 46 || x > 64) {
-    if (x<91) {
-
-
-
-
-
-if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals") {
-      document.getElementById('collection-component').style.display = "block";
-      document.getElementById('large-white-box').style.display = "block";
-      
+function hideContactCircle() {
+    contactCircle.style.opacity = "0";
+    contactCircle.style.transition = "clip-path 0.5s ease-in-out, opacity 0.15s ease-in-out";
 }
 
-if(pageID === "Browse By Category" || pageID === "Animals") {
-      document.getElementById('browse-page-contents').style.display = "none";
+function showContactCircle() {
+    contactCircle.style.opacity = "1";
+    contactCircle.style.transition = "clip-path 0.5s ease-in-out, opacity 0.4s 0.3s ease";
 }
 
-if(pageID === "Home") {
-      document.getElementById('homepage-contents').style.display = "none";
+function hideFacebookCircle() {
+    facebookCircle.style.opacity = "0";
+    facebookCircle.style.transition = "opacity 0.15s ease-in-out";
 }
 
-if(pageID === "Shipping & Payment") {
-      document.getElementById('shipping-page-contents').style.display = "none";
+function showFacebookCircle() {
+    facebookCircle.style.opacity = "1";
+    facebookCircle.style.transition = "opacity 0.4s 0.3s ease";
+}
+
+searchBar.addEventListener('click', setColour);
+
+function setColour() {
+      searchBar.style.color = "rgb(0,0,0,0.73";
+}
+
+// searchBar.addEventListener('keyup', executeSearch);   
+
+
+
+var searchEntryStr;
+var uniqueResults;
+var nameArray;
+
+
+let searchResult1 = document.getElementById('search-result-1');
+let searchResult2 = document.getElementById('search-result-2');
+let searchResult3 = document.getElementById('search-result-3');
+let searchResult4 = document.getElementById('search-result-4');
+let searchResult5 = document.getElementById('search-result-5');
+let searchResult6 = document.getElementById('search-result-6');
+let searchResult7 = document.getElementById('search-result-7');
+
+searchResult1.style.display = "none";
+searchResult2.style.display = "none";
+searchResult3.style.display = "none";
+searchResult4.style.display = "none";
+searchResult5.style.display = "none";
+searchResult6.style.display = "none";
+searchResult7.style.display = "none";
+
+document.getElementById("search-result-1").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-2").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-3").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-4").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-5").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-6").addEventListener("click", grabAndSearch);
+document.getElementById("search-result-7").addEventListener("click", grabAndSearch);
+
+function grabAndSearch(e) {
+    var searchSuggestion = e.target.innerHTML;
+    searchBar.value = searchSuggestion;
+    searchEntryStr = searchSuggestion;
+    runSearch();
+    displaySearch();
+    searchResultCloser();
+}
+
+document.body.addEventListener('click', searchResultCloser);
+
+function searchResultCloser(){
+    searchResult1.style.display = "none";
+    searchResult2.style.display = "none";
+    searchResult3.style.display = "none";
+    searchResult4.style.display = "none";
+    searchResult5.style.display = "none";
+    searchResult6.style.display = "none";
+    searchResult7.style.display = "none";
+    document.getElementById('search-field').style.borderRadius = "10px";
 }
 
 
+searchBar.addEventListener('keyup', performSearch);   
 
-    const searchEntryStr = e.target.value;
+document.getElementById("search-icon").addEventListener('click', displaySearch);
+
+function performSearch(e) {
+    runSearch();
+    var x = e.keyCode;
+
+    if (x === 13) {
+        displaySearch();
+        searchResultCloser();
+    }
+}
+
+function runSearch() {
+    searchEntryStr = document.getElementById('search-field').value;
     const searchEntryStrLowerCase = searchEntryStr.toLowerCase();
     const searchEntryArr = searchEntryStrLowerCase.split(' ');
     var searchResultsProductNames = [];
@@ -292,13 +367,143 @@ if(pageID === "Shipping & Payment") {
     }
 
     // remove duplicate search results
-    let uniqueResults = [...new Set(searchResultsProductNames)];
+    uniqueResults = [...new Set(searchResultsProductNames)];
+    nameArray = [...uniqueResults];
+
+    // remove IDs from the array so that it just contains the product names
+    for(i=nameArray.length; i>=0; i--) {
+      if(typeof nameArray[i] === "number") {
+        nameArray.splice(i,1);
+
+        if(i>14) {
+          nameArray.splice(i,1);
+        }
+      }
+    }
 
     // remove product names from the array so that it just contains the product IDs
     for(i=0; i<uniqueResults.length; i++) {
       if(typeof uniqueResults[i] === "string") {
         uniqueResults.splice(i,1);
       }
+    }
+
+    console.log(nameArray);
+
+    searchResult1.innerHTML = nameArray[0];
+    searchResult2.innerHTML = nameArray[1];
+    searchResult3.innerHTML = nameArray[2];
+    searchResult4.innerHTML = nameArray[3];
+    searchResult5.innerHTML = nameArray[4];
+    searchResult6.innerHTML = nameArray[5];
+    searchResult7.innerHTML = nameArray[6];
+
+
+    if(nameArray.length === 0) {
+      searchResultCloser();      
+    }
+    if(nameArray.length === 1) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "none";
+      searchResult3.style.display = "none";
+      searchResult4.style.display = "none";
+      searchResult5.style.display = "none";
+      searchResult6.style.display = "none";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length === 2) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "none";
+      searchResult4.style.display = "none";
+      searchResult5.style.display = "none";
+      searchResult6.style.display = "none";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length === 3) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "block";
+      searchResult4.style.display = "none";
+      searchResult5.style.display = "none";
+      searchResult6.style.display = "none";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length === 4) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "block";
+      searchResult4.style.display = "block";
+      searchResult5.style.display = "none";
+      searchResult6.style.display = "none";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length === 5) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "block";
+      searchResult4.style.display = "block";
+      searchResult5.style.display = "block";
+      searchResult6.style.display = "none";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length === 6) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "block";
+      searchResult4.style.display = "block";
+      searchResult5.style.display = "block";
+      searchResult6.style.display = "block";
+      searchResult7.style.display = "none";
+    }
+    if(nameArray.length >= 7) {
+      searchResult1.style.display = "block";
+      searchResult2.style.display = "block";
+      searchResult3.style.display = "block";
+      searchResult4.style.display = "block";
+      searchResult5.style.display = "block";
+      searchResult6.style.display = "block";
+      searchResult7.style.display = "block";
+    }
+    if(nameArray.length >= 1) {
+      document.getElementById('search-field').style.borderRadius = "10px 10px 0px 0px";
+    }
+    if(searchEntryStr.length === 0) {
+      searchResultCloser();
+    }
+}
+
+
+
+
+
+
+
+
+function displaySearch() {
+
+    searchBar.style.color = "rgb(0,0,0,0.5";
+
+    document.getElementById("search-results").style.backdropFilter = "blur(60px)";
+    document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.15)";
+
+
+    if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals") {
+          document.getElementById('collection-component').style.display = "block";
+          document.getElementById('large-white-box').style.display = "block";
+          
+    }
+
+    if(pageID === "Browse By Category" || pageID === "Animals") {
+          document.getElementById('browse-page-contents').style.display = "none";
+    }
+
+    if(pageID === "Home") {
+          document.getElementById('homepage-contents').style.display = "none";
+    }
+
+    if(pageID === "Shipping & Payment") {
+          document.getElementById('shipping-page-contents').style.display = "none";
     }
 
 
@@ -590,12 +795,12 @@ if(pageID === "Shipping & Payment") {
                 // "font-weight": "bold",
                 "color": "white",
                 ":hover": {
-                  "color": "#115500",
-                  "background-color": "#0f4d00"
+                  "color": "#black",
+                  "background-color": "#black"
                 },
                 "background-color": "rgb(0,0,0,0.9)",
                 ":focus": {
-                  "background-color": "#0f4d00"
+                  "background-color": "black"
                 },
                 "border-radius": "0px"
               },
@@ -725,7 +930,7 @@ if(pageID === "Shipping & Payment") {
 }
 
 // The following curly brace and bracket go with the keydown event listener
-}}});
+};
 
 
 
@@ -947,12 +1152,12 @@ if(pageID === "Shipping & Payment") {
                 // "font-weight": "bold",
                 "color": "white",
                 ":hover": {
-                  "color": "#115500",
-                  "background-color": "#0f4d00"
+                  "color": "white",
+                  "background-color": "black"
                 },
                 "background-color": "rgb(0,0,0,0.9)",
                 ":focus": {
-                  "background-color": "#0f4d00"
+                  "background-color": "black"
                 },
                 "border-radius": "0px"
               },

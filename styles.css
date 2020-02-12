@@ -82,14 +82,7 @@ body {
 	/*background-color: rgb(65,16,77);*/
 	font-family: futura, sans-serif;
 	color: #1e3264;
-	/*font-family: 'Sue Ellen Francisco', cursive;*/
-	/*font-family: 'Bowlby One', cursive;*/
-	/*font-family: 'Montserrat Subrayada', sans-serif;*/
-	/*font-family: 'Geo', sans-serif;*/
-	/*font-family: 'Gaegu', cursive;*/
-	/*font-family: 'Modak', cursive;*/
-	/*font-family: 'Major Mono Display', monospace;*/
-	/*font-family: 'ZCOOL KuaiLe', cursive;*/
+
 }
 
 #large-white-box {
@@ -168,27 +161,19 @@ body {
 	opacity: 0.5;
 }
 
-#rainbow-icon {
-	position: absolute;
-	/*width: 5%;*/
-	left: 240px;
-	top: 17px;
-	opacity: 1;
-	/*z-index: 0;*/
-	/*filter: invert(1);*/
-}
-
 #search-field {
+	display: inline-block;
 	position: relative;
-	left: 50%;
-	margin-left: -19.1%;
-	margin-top: -2px;
+	/*left: 50%;*/
+	/*margin-left: -19.1%;*/
+	/*margin-top: -10px;*/
 	padding: 11px 12px 11px 17px;
 	border: none;
-	width: 38.2%;
+	width: 100%;
 	border-radius: 10px;
 	background: linear-gradient(145deg, rgb(255,255,255,0.8), rgb(255,255,255,0.2));
  	/*background: none;*/
+ 	color: rgb(0,0,0,0.7);
  	border: none;
  	/*border-bottom: 1px solid rgb(0,0,0,0.5);*/
  	/*width: 100%;*/
@@ -196,6 +181,7 @@ body {
 	/*margin-top: -7px;*/
  	font-size: 17px;
  	font-family: futura, sans-serif;
+ 	outline: 0;
  }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -212,18 +198,17 @@ body {
 }
 
 #search-icon {
-	position: relative;
-	left: 47%;
-	/*margin-left: -225px;*/
-	/*margin-top: -7px;*/
-	/*padding: 12px;*/
 	background: none;
 	border: none;
 }
 
-.fa {
+.fa-search {
 	font-size: 17px;
 	color: #1e3264;
+	position: absolute;
+	top: 14px;
+	right: 16px;
+	cursor: pointer;
 }
 
 .shopify-buy__cart__title {
@@ -239,44 +224,23 @@ body {
 	z-index: -2;
 }
 
-#logo-text2 {
-	/*font-family: filicudi-striped, sans-serif;*/
-}
-
 #logo-text {
 	font-weight: 400;
 	font-style: normal;
 	position: relative;
-	top: 40px;
+	/*top: 40px;*/
+	margin-top: 40px;
 	font-size: 32px;
-	left: 62px;
+	margin-left: 62px;
+	width: 0px;
+	height: 0px;
 	/*visibility: hidden;*/
-	/*background: linear-gradient(to left, #ff0 75%, #add2ed, #ffb2ff);*/
+	background: linear-gradient(to left, #ff0 75%, #add2ed, #ffb2ff);
 	/*background: linear-gradient(to left, #0052d4 75%, #4364f7, #6fb1fc);*/
 	/*background: linear-gradient(to left, #59c173 85%, #a17fe0, #5d26c1);*/
 	/*-webkit-background-clip: text;*/
-	/*-webkit-text-fill-color: transparent;*/
-	font-family: 'Knewave', cursive;
-	font-family: 'Sue Ellen Francisco', cursive;
-	font-family: 'Bowlby One', cursive;
-	font-family: 'Montserrat Subrayada', sans-serif;
-	font-family: 'Geo', sans-serif;
-	font-family: 'Gaegu', cursive;
-	/*font-family: 'Modak', cursive;*/
-	font-family: 'Major Mono Display', monospace;
-	/*font-family: 'ZCOOL KuaiLe', cursive;*/
-	/*font-family: 'New Rocker', cursive;*/
-	/*font-family: 'Chango', cursive;*/
 	font-family: 'Josefin Sans', sans-serif;
-	/*font-family: 'Philosopher', sans-serif;*/
-	/*font-family: flegrei, sans-serif;*/
-	/*font-family: 'Alata', sans-serif;*/
-	/*font-family: 'Julius Sans One', sans-serif;*/
-	/*font-family: 'Mansalva', cursive;*/
-	/*font-family: 'Anaheim', sans-serif;*/
-	/*font-family: 'Proza Libre', sans-serif;*/
-	/*font-family: 'Jacques Francois Shadow', cursive;*/
-	/*color: white;*/
+
 }
 
 .product-component {
@@ -302,7 +266,7 @@ body {
 	/*background-image:*/
     /*radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),*/
     /*radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);*/
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	/*color: #6cacc5;*/
 	/*background: linear-gradient(120grad, rgb(100, 57, 134), rgb(152, 174, 213))*/
 }
@@ -1025,16 +989,15 @@ filter: saturate(5) hue-rotate(80deg);
 }
 
 #homepage-button {
-	width: 300px;
+	width: 280px;
 	height: 50px;
 	position: relative;
 	display: block;
 	margin-top: 30px;
-	border-radius: 15px;
+	border-radius: 10px;
 	background-color: rgb(0,0,0,0);
 	border: 2px solid white;
 	color: white;
-	font-family: arial;
 	font-size: 16px;
 	outline: 0;
 	cursor: pointer;
@@ -1042,7 +1005,7 @@ filter: saturate(5) hue-rotate(80deg);
 transition: all 0.2s ease;
 	text-align: center;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -140px;
 	/*z-index: 6;*/
 }
 
@@ -1058,13 +1021,149 @@ button {
 	outline: 0;
 }
 
-/*#free-shipping-banner {
-	background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0) 700%);
-	height: 1px;
-	text-align: center;
-	top: 150px;
-	position: relative;
+#shipping-circle {
+	opacity: 1;
+	background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.08));
+	top: 0px;
+	right: 0px;
+	/*text-align: center;*/
+	line-height: 21px;
+	width: 100%;
+	height: 100%;
+	/*opacity: 0.5;*/
+	/*border-radius: 22px;*/
+	position: absolute;
+	z-index: 1;
+	/*color: white;*/
+	font-size: 14.5px;
+	/*font-style: italic;*/
+	clip-path: circle(22.5px at 92.4% 26.6%);
+	transition: clip-path 0.5s ease-in-out;
+	padding: 10px 0px 10px 15px;
+}
+
+
+
+#contact-circle {
+	opacity: 1;
+	background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.08));
+	top: 0px;
+	right: 0px;
+	/*text-align: center;*/
+	line-height: 21px;
+	width: 100%;
+	height: 100%;
+	/*opacity: 0.5;*/
+	/*border-radius: 22px;*/
+	position: absolute;
+	z-index: 1;
+	/*color: white;*/
+	font-size: 14.5px;
+	/*font-style: italic;*/
+	clip-path: circle(22.5px at 89% 26.6%);
+	padding: 10px 0px 10px 15px;
+		transition: clip-path 0.5s ease-in-out;
+
+}
+
+#facebook-circle {
+	opacity: 1;
+	background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.08));
+	top: 0px;
+	right: 0px;
+	/*text-align: center;*/
+	line-height: 21px;
+	width: 100%;
+	height: 100%;
+	/*opacity: 0.5;*/
+	/*border-radius: 22px;*/
+	position: absolute;
+	z-index: 1;
+	/*color: white;*/
+	font-size: 14.5px;
+	/*font-style: italic;*/
+	clip-path: circle(22.5px at 89% 26.6%);
+	padding: 10px 0px 10px 15px;
+		transition: clip-path 0.5s ease-in-out;
+
+}
+
+
+#truck {
+	position: absolute;
+	top: 12px;
+	right: 8px;
+}
+
+#envelope {
+	position: absolute;
+	top: 13px;
+	right: 10px;
+}
+
+#shipping-circle:hover {
+	clip-path: circle(200% at 89.3% 18.7%);
+}
+
+/*#shipping-circle:hover ~ #contact-circle {
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
 }*/
+
+#contact-circle:hover {
+	clip-path: circle(200% at 89.3% 18.7%);
+}
+
+/*#fake-contact-circle:hover ~ #shipping-circle {
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
+}*/
+
+#shipping-circle-container {
+		/*background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.15));*/
+	overflow: hidden;
+	width: 297px;
+	height: 84px;
+	position: absolute;
+	right: 50px;
+	border-radius: 23px;
+		top: 30px;
+}
+
+#contact-circle-container {
+		/*background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.15));*/
+	overflow: hidden;
+	width: 207px;
+	height: 84px;
+	position: absolute;
+	right: 110px;
+	border-radius: 23px;
+		top: 30px;
+}
+
+#facebook-circle-container {
+		/*background: linear-gradient(140deg, rgb(30,50,100,0.15), rgb(30,50,100,0.15));*/
+	overflow: hidden;
+	width: 207px;
+	height: 84px;
+	position: absolute;
+	right: 170px;
+	border-radius: 23px;
+	top: 30px;
+	cursor: pointer;
+}
+
+#facebook {
+	position: absolute;
+	top: 13px;
+	right: 13px;
+}
+
+.fas, .fab {
+	display: inline;
+	font-size: 17px;
+	color: #1e3264;
+}
 
 #new-in-container {
 	background-color: #1e3264;
@@ -1133,11 +1232,10 @@ button {
 	/*position: relative;*/
 	/*display: block;*/
 	/*margin-top: 30px;*/
-	border-radius: 15px;
+	border-radius: 10px;
 	background-color: rgb(0,0,0,0);
 	border: 2px solid white;
 	color: white;
-	font-family: arial;
 	font-size: 16px;
 	outline: 0;
 	cursor: pointer;
@@ -1240,4 +1338,56 @@ transition: all 0.2s ease;
 	position: relative;
 	top: -71px;
 	left: 63.5px;
+	width: 121px;
 }
+
+.search-result {
+	position: relative;
+	top: -1px;
+	/*left: 396px;*/
+ 	font-size: 17px;
+ 	padding: 10px 16px;
+ 	/*background-color: rgb(240,240,240,0.9);*/
+ 	/*width: 48px;*/
+ 	z-index: 5;
+ 	color: white;
+ 	cursor: pointer;
+ 	display: inline;
+}
+
+#search-results {
+	border-radius: 0px 0px 10px 10px;
+ 	-webkit-backdrop-filter: blur(60px);
+	backdrop-filter: blur(60px);
+	background: rgb(0,0,0,0.17);
+	position: relative;
+	top: -1px;
+	/*left: 396px;*/
+ 	font-size: 17px;
+ 	/*padding: 10px 16px;*/
+ 	/*background-color: rgb(240,240,240,0.9);*/
+ 	width: 100%;
+ 	z-index: 5;
+ 	overflow: hidden;
+}
+
+#search-bar {
+	/*background-color: rgb(0,0,0,0.9);*/
+	width: 38.2%;
+	left: 50%;
+	margin-left: -19.1%;
+	position: relative;
+	margin-top: -10px;
+	border-radius: 10px;
+	/*box-shadow: 0px 1px 3px rgba(0,0,0,.08);*/
+}
+
+
+.search-result:hover {
+	/*position: relative;*/
+	/*top: 1px;*/
+	/*left: 396px;*/
+ 	/*font-size: 17px;*/
+ 	/*margin-bottom: -1px;*/
+ 	background-color: rgb(240,240,240,0.2);
+ }
