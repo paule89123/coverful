@@ -200,7 +200,48 @@ let cushionCoversIdList = [
   "Stormtrooper (Star Wars) Design 2", 4560742023301,
   "Yoda (Star Wars)", 4560749133957,
 
+  "Basset Hound", 4571817148549,
+  "Bichon Frise Design 1", 4571820720261,
+  "Bichon Frise Design 2", 4571821441157,
+  "Border Collie", 4571822719109,
+  "Chihuahua", 4571824521349,
+  "Dachshund (Sausage Dog) Design 1", 4571828781189,
+  "Dachshund (Sausage Dog) Design 2", 4571831304325,
+  "Maltese", 4571833729157,
+  "Miniature Schnauzer", 4571835662469,
+  "Shih Tzu", 4571838316677,
+  "Staffordshire Bull Terrier", 4571838939269,
 
+  "Boxing Cat (Design 1)", 4571986526341,
+  "Boxing Cat (Design 2)", 4572019818629,
+  "Boxing Cat (Design 3)", 4572020637829,
+  "Boxing Cat (Design 4)", 4572022046853,
+  "Boxing Cat (Design 5)", 4572024275077,
+
+  "Flamingo (Design 1)", 4572056027269,
+  "Flamingo (Design 2)", 4572057174149,
+  "Flamingo (Design 3)", 4572059271301,
+  "Flamingo (Design 4)", 4572063629445,
+  "Blue Budgie", 4572183822469,
+  "Blue Masked Lovebird", 4572187689093,
+  "Cockatiel", 4572191490181,
+  "Green Parrot", 4572192997509,
+  "Orange Parrot", 4572193718405,
+
+  "Butterflies (Design 1)", 4572238282885,
+  "Butterflies (Design 2)", 4572239134853,
+  "Butterflies (Design 3)", 4572240117893,
+  "Butterflies (Design 4)", 4572241330309,
+  "Butterflies (Design 5)", 4572244181125,
+  "Butterflies (Design 6)", 4572245033093,
+  "Butterflies (Design 7)", 4572248866949,
+  "Butterflies (Design 8)", 4572249620613,
+
+  "Cow (Design 1)", 4572262203525,
+  "Cow (Design 2)", 4572265316485,
+  "Cow (Design 3)", 4572265873541,
+  "Cow (Design 4)", 4572266496133,
+  "Pig", 
 
   "", ""
   // these empty strings is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
@@ -215,6 +256,21 @@ let cushionCoversIdList = [
   }
 
 const searchBar = document.getElementById('search-field');
+const whiteness = document.getElementById('whiteness');
+
+
+searchBar.addEventListener("click", makeSearchBarBrighter);
+searchBar.addEventListener("focusout", makeSearchBarDuller);
+
+
+function makeSearchBarBrighter() {
+    whiteness.style.opacity = "0.84";
+}
+
+function makeSearchBarDuller() {
+    whiteness.style.opacity = "0";
+}
+
 
 if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
       document.getElementById('collection-component').style.display = "none";
@@ -228,35 +284,50 @@ let shippingCircle = document.getElementById('shipping-circle');
 let contactCircle = document.getElementById('contact-circle');
 let facebookCircle = document.getElementById('facebook-circle');
 
+shippingCircle.addEventListener("mouseover", onMouseoverShippingCircle);
+shippingCircle.addEventListener("mouseleave", onMouseleaveShippingCircle);
+contactCircle.addEventListener("mouseover", onMouseoverContactCircle);
+contactCircle.addEventListener("mouseleave", onMouseleaveContactCircle);
 
-shippingCircle.addEventListener("mouseover", hideContactCircle);
-shippingCircle.addEventListener("mouseleave", showContactCircle);
 
-shippingCircle.addEventListener("mouseover", hideFacebookCircle);
-shippingCircle.addEventListener("mouseleave", showFacebookCircle);
+function onMouseoverShippingCircle() {
+    hideContactCircle();
+    hideFacebookCircle();
+    shippingCircle.style.background = "rgb(255,255,255,0.4)";
+    // shippingCircle.style.transition = "clip-path 0.5s ease-in-out, background 0.5s ease-in-out";
+}
+function onMouseleaveShippingCircle() {
+    showContactCircle();
+    showFacebookCircle();
+    // shippingCircle.style.transition = "clip-path 0.5s ease-in-out, background 0.5s ease-in-out";
+    shippingCircle.style.background = "rgb(0,0,0,0.05)";
 
-contactCircle.addEventListener("mouseover", hideFacebookCircle);
-contactCircle.addEventListener("mouseleave", showFacebookCircle);
+}
+function onMouseoverContactCircle() {
+    hideFacebookCircle();
+    contactCircle.style.background = "rgb(255,255,255,0.4)";
+}
 
+function onMouseleaveContactCircle() {
+    showFacebookCircle();
+    contactCircle.style.background = "rgb(0,0,0,0.05)";
+}
 
 function hideContactCircle() {
     contactCircle.style.opacity = "0";
-    contactCircle.style.transition = "clip-path 0.5s ease-in-out, opacity 0.15s ease-in-out";
+    contactCircle.style.transition = "clip-path 0.67s ease-in-out, opacity 0.15s ease-in-out, background 0.5s ease-in-out";
 }
-
 function showContactCircle() {
     contactCircle.style.opacity = "1";
-    contactCircle.style.transition = "clip-path 0.5s ease-in-out, opacity 0.4s 0.3s ease";
+    contactCircle.style.transition = "clip-path 0.67s ease-in-out, opacity 0.4s 0.3s ease, background 0.5s ease-in-out";
 }
-
 function hideFacebookCircle() {
     facebookCircle.style.opacity = "0";
-    facebookCircle.style.transition = "opacity 0.15s ease-in-out";
+    facebookCircle.style.transition = "opacity 0.15s ease-in-out, background 0.2s ease-in-out";
 }
-
 function showFacebookCircle() {
     facebookCircle.style.opacity = "1";
-    facebookCircle.style.transition = "opacity 0.4s 0.3s ease";
+    facebookCircle.style.transition = "opacity 0.4s 0.3s ease, background 0.2s ease-in-out";
 }
 
 searchBar.addEventListener('click', setColour);
@@ -317,7 +388,8 @@ function searchResultCloser(){
     searchResult5.style.display = "none";
     searchResult6.style.display = "none";
     searchResult7.style.display = "none";
-    document.getElementById('search-field').style.borderRadius = "10px";
+    searchBar.style.borderRadius = "10px";
+    whiteness.style.borderRadius = "10px";
 }
 
 
@@ -336,7 +408,7 @@ function performSearch(e) {
 }
 
 function runSearch() {
-    searchEntryStr = document.getElementById('search-field').value;
+    searchEntryStr = searchBar.value;
     const searchEntryStrLowerCase = searchEntryStr.toLowerCase();
     const searchEntryArr = searchEntryStrLowerCase.split(' ');
     var searchResultsProductNames = [];
@@ -387,8 +459,6 @@ function runSearch() {
         uniqueResults.splice(i,1);
       }
     }
-
-    console.log(nameArray);
 
     searchResult1.innerHTML = nameArray[0];
     searchResult2.innerHTML = nameArray[1];
@@ -466,7 +536,8 @@ function runSearch() {
       searchResult7.style.display = "block";
     }
     if(nameArray.length >= 1) {
-      document.getElementById('search-field').style.borderRadius = "10px 10px 0px 0px";
+      searchBar.style.borderRadius = "10px 10px 0px 0px";
+      whiteness.style.borderRadius = "10px 10px 0px 0px";
     }
     if(searchEntryStr.length === 0) {
       searchResultCloser();
@@ -696,7 +767,7 @@ function displaySearch() {
             },
 
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "productSet": {
@@ -769,7 +840,7 @@ function displaySearch() {
               }
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ],
             "text": {
               "button": "ADD TO CART",
@@ -852,7 +923,7 @@ function displaySearch() {
               "button": "Checkout"
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "toggle": {
@@ -880,7 +951,7 @@ function displaySearch() {
               }
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "lineItem": {
@@ -1006,20 +1077,21 @@ function displaySearch() {
               "button": {
                 // "opacity": "0",
                 "font-family": "futura, sans-serif",
-                "font-weight": "bold",
-                "color": "white",
-                "font-size": "12px",
+                // "font-weight": "bold",
+                "color": "black",
+                "font-size": "15px",
                 ":hover": {
-                  "color": "#115500",
-                  "background-color": "#0f4d00"
+                  "color": "white",
+                  "background-color": "black"
                 },
-                "background-color": "black",
+                "background-color": "white",
                 ":focus": {
                   "background-color": "#0f4d00"
                 },
-                "border-radius": "1px",
+                "border-radius": "4px",
+                "border": "2px solid black",
                 "padding-left": "15px",
-                "padding-right": "15px"
+                "padding-right": "15px",
               },
               "price": {
                 "font-family": "futura, sans-serif",
@@ -1054,7 +1126,7 @@ function displaySearch() {
             },
 
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "productSet": {
@@ -1085,6 +1157,7 @@ function displaySearch() {
               },
               "button": {
                 "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+                "border": "0",
                 "font-size": "12px",
                 // "font-weight": "500",
                 "font-family": "futura, sans-serif",
@@ -1127,7 +1200,7 @@ function displaySearch() {
               }
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ],
             "text": {
               "button": "ADD TO CART",
@@ -1209,7 +1282,7 @@ function displaySearch() {
               "button": "Checkout"
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "toggle": {
@@ -1237,7 +1310,7 @@ function displaySearch() {
               }
             },
             "googleFonts": [
-              "Vollkorn"
+              "futura"
             ]
           },
           "lineItem": {
