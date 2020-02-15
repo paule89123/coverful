@@ -227,6 +227,11 @@ let cushionCoversIdList = [
   "Cockatiel", 4572191490181,
   "Green Parrot", 4572192997509,
   "Orange Parrot", 4572193718405,
+  "Kingfisher (Design 1)", 4576155893893,
+  "Kingfisher (Design 2)", 4576158056581,
+  "Kingfisher (Design 3)", 4576160284805,
+  "Kingfisher (Design 4)", 4576163725445,
+  "Kingfisher (Design 5)", 4576165363845,
 
   "Butterflies (Design 1)", 4572238282885,
   "Butterflies (Design 2)", 4572239134853,
@@ -241,7 +246,20 @@ let cushionCoversIdList = [
   "Cow (Design 2)", 4572265316485,
   "Cow (Design 3)", 4572265873541,
   "Cow (Design 4)", 4572266496133,
-  "Pig", 
+  "Pig", 4572267151493,
+  "Rooster (Design 1)", 4576179912837,
+  "Rooster (Design 2)", 4576181026949,
+  "Rooster (Design 3)", 4576182698117,
+
+  "Deer", 4576198000773,
+  "Elephant (Design 1)", 4576200786053,
+  "Elephant (Design 2)", 4576202522757,
+  "Lion", 4576204357765,
+  "Lion or Tiger", 4576212484229,
+  "Tigers (Design 1)", 4576206127237,
+  "Tigers (Design 2)", 4576207929477,
+  "Tigers (Design 3)", 4576209076357,
+
 
   "", ""
   // these empty strings is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
@@ -392,6 +410,7 @@ function searchResultCloser(){
     whiteness.style.borderRadius = "10px";
 }
 
+let loadingAnimation = document.getElementById('loading');
 
 searchBar.addEventListener('keyup', performSearch);   
 
@@ -553,6 +572,10 @@ function runSearch() {
 
 function displaySearch() {
 
+    loadingAnimation.style.display = "block";
+    loadingAnimation.style.top = "120px";
+
+
     searchBar.style.color = "rgb(0,0,0,0.5";
 
     document.getElementById("search-results").style.backdropFilter = "blur(60px)";
@@ -562,6 +585,7 @@ function displaySearch() {
     if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals") {
           document.getElementById('collection-component').style.display = "block";
           document.getElementById('large-white-box').style.display = "block";
+
           
     }
 
@@ -582,6 +606,7 @@ function displaySearch() {
 
     // display message if no search results are found
     if(uniqueResults.length === 0) {
+      loadingAnimation.style.display = "none";
       document.getElementById('breadcrumbs').style.visibility = "hidden";
       document.getElementById('search-results-text').innerHTML = "";
       document.getElementById('search-results-text-unsuccessful').style.display = "block";
@@ -1009,6 +1034,11 @@ function displaySearch() {
 // the following IIFE initiliases the shopify component
 
 (function () {
+
+          if(pageID != "Home" && pageID != "Browse By Category" && pageID != "Animals" && pageID != "Shipping & Payment") {
+              loadingAnimation.style.display = "block";
+          }
+
           var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
           if (window.ShopifyBuy) {
             if (window.ShopifyBuy.UI) {
@@ -1086,7 +1116,7 @@ function displaySearch() {
                 },
                 "background-color": "white",
                 ":focus": {
-                  "background-color": "#0f4d00"
+                  "background-color": "black"
                 },
                 "border-radius": "4px",
                 "border": "2px solid black",
