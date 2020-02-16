@@ -291,10 +291,10 @@ function makeSearchBarDuller() {
 
 
 if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
-      document.getElementById('collection-component').style.display = "none";
-      document.getElementById('large-white-box').style.display = "none";
-      document.getElementById("search-results").style.backdropFilter = "blur(40px)";
-      document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.05)";
+    document.getElementById('collection-component').style.display = "none";
+    document.getElementById('large-white-box').style.display = "none";
+    document.getElementById("search-results").style.backdropFilter = "blur(40px)";
+    document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.05)";
 }
 
 
@@ -411,6 +411,26 @@ function searchResultCloser(){
 }
 
 let loadingAnimation = document.getElementById('loading');
+
+let collectionComponent = document.getElementById('collection-component')
+let footer = document.getElementById('footer');
+
+if(pageID === "Shipping & Payment") {
+    footer.style.display = "block";
+}
+
+// the following ResizeObserver ensures that the footer only loads after the products have loaded. It observes a change in height of
+// the collectionComponent when the results load
+
+const observer = new ResizeObserver(entries => {
+    for (let entry of entries) {
+      if(entry.contentRect.height > 0) {
+        footer.style.display = "block";
+      }
+    }
+});
+
+observer.observe(collectionComponent);
 
 searchBar.addEventListener('keyup', performSearch);   
 
@@ -566,12 +586,9 @@ function runSearch() {
 
 
 
-
-
-
-
 function displaySearch() {
 
+    footer.style.display = "none";
     loadingAnimation.style.display = "block";
     loadingAnimation.style.top = "120px";
 
@@ -1381,9 +1398,14 @@ function displaySearch() {
             }
           }
         },
+
               });
-            });
+            }); 
           }
         })();
+
+
+
+
 
 
