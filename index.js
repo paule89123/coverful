@@ -1199,10 +1199,12 @@ function displaySearch() {
                   "user-select": "none"
                 }
               },
-              "img": {
-                "width": "400px",
-              },
+              // "img": {
+              //   "width": "400px",
+              // },
               "button": {
+                // "position": "absolute",
+                // "bottom": "100px",
                 "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
                 "border": "0",
                 "font-size": "12px",
@@ -1218,7 +1220,8 @@ function displaySearch() {
                   "background-color": "#0f4d00"
                 },
                 "border-radius": "0px",
-                "padding": "15px 105px 15px 105px",
+                "padding-left": "15px",
+                "padding-right": "15px",
               },
               "title": {
                 "font-family": "futura, sans-serif",
@@ -1256,11 +1259,11 @@ function displaySearch() {
           "modal": {
             "styles": {
               "modal": {
-                "user-select": "none",
+                // "user-select": "none",
                 "background-color": "white",
                 // "border": "30px solid black",
-                "border-radius": "15px",
-                "box-shadow": "0px 0px 100px rgba(0,0,0,0.2)"
+                // "border-radius": "15px",
+                // "box-shadow": "0px 0px 100px rgba(0,0,0,0.2)"
 
               }
             }

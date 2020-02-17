@@ -432,8 +432,8 @@ li:hover #submenu1, li:hover>#submenu2, li:hover #submenu4 {
 
 .submenu::before {
 	content: "";
-	background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-	filter: blur(10px);
+	background-color: rgb(0,0,0,0.15);
+	filter: blur(15px);
 	position: absolute;
 	z-index: -1;
 	/*background-color: blue;*/
@@ -1480,7 +1480,7 @@ footer {
 	font-size: 12px;
 	text-align: center;
 	background-color: white;
-	color: rgb(30,50,100,0.3);
+	color: rgb(30,50,100,0.4);
 	height: 80px;
 	/*opacity: 0.5;*/
 	/*height: 100px;*/
@@ -1533,7 +1533,7 @@ footer a:hover {
 
 #white-part-of-footer a {
 	text-decoration: none;
-	color: rgb(30,50,100,0.3);
+	color: rgb(30,50,100,0.4);
 }
 
 #white-part-of-footer a:hover {
