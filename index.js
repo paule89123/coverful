@@ -48,67 +48,67 @@ let cushionCoversIdList = [
   "Various Ice Creams", 4517462081669,
 
   "Aaargh Pop Art", 4523652808837,
-  "Ahhhh Pop Art", 4523671519365,
+  // "Ahhhh Pop Art", 4523671519365,
   "Arrgh Pop Art", 4523675156613,
-  "Bam Pop Art", 4523688820869,
-  "Bang (Design 1) Pop Art", 4523665227909,
-  "Bang (Design 2) Pop Art", 4523691278469,
-  "Bang (Design 3) Pop Art", 4523693179013,
-  "Boom (Design 1) Pop Art", 4523658707077,
-  "Boom (Design 2) Pop Art", 4523663458437,
-  "Ja Pop Art", 4523698651269,
-  "Joy Pop Art", 4523720343685,
-  "Kapow (Design 1) Pop Art", 4523649302661,
-  "Kapow (Design 2) Pop Art", 4523723653253,
-  "OMG Pop Art", 4523726307461,
-  "Pow (Design 1) Pop Art", 4523729223813,
-  "Pow (Design 2) Pop Art", 4523731910789,
-  "Splat Pop Art", 4523733680261,
-  "Wham Pop Art", 4523668340869,
-  "Yeah Pop Art", 4523736006789,
+  // "Bam Pop Art", 4523688820869,
+  // "Bang (Design 1) Pop Art", 4523665227909,
+  // "Bang (Design 2) Pop Art", 4523691278469,
+  // "Bang (Design 3) Pop Art", 4523693179013,
+  // "Boom (Design 1) Pop Art", 4523658707077,
+  // "Boom (Design 2) Pop Art", 4523663458437,
+  // "Ja Pop Art", 4523698651269,
+  // "Joy Pop Art", 4523720343685,
+  // "Kapow (Design 1) Pop Art", 4523649302661,
+  // "Kapow (Design 2) Pop Art", 4523723653253,
+  // "OMG Pop Art", 4523726307461,
+  // "Pow (Design 1) Pop Art", 4523729223813,
+  // "Pow (Design 2) Pop Art", 4523731910789,
+  // "Splat Pop Art", 4523733680261,
+  "5Wham Pop Art", 4523668340869,
+  "5Yeah Pop Art", 4523736006789,
 
-  "Floral Design 1", 4523910660229,
-  "Floral Design 2", 4523936809093,
-  "Floral Design 3", 4523938414725,
-  "Floral Design 4", 4523941298309,
-  "Floral Design 5", 4523943329925,
-  "Floral Design 6", 4523944902789,
-  "Floral Design 7", 4523946311813,
-  "Floral Design 8", 4523947753605,
-  "Floral Design 9", 4523949555845,
-  "Floral Design 10", 4523952144517,
-  "Floral Design 11", 4523956011141,
-  "Floral Design 12", 4523957649541,
-  "Floral Design 13", 4523959910533,
-  "Floral Design 14", 4523962499205,
-  "Floral Design 15", 4523964039301,
-  "Floral Design 16", 4523966333061,
-  "Floral Design 17", 4523968233605,
+  "5Floral Design 1", 4523910660229,
+  "5Floral Design 2", 4523936809093,
+  "5Floral Design 3", 4523938414725,
+  "5Floral Design 4", 4523941298309,
+  "5Floral Design 5", 4523943329925,
+  "5Floral Design 6", 4523944902789,
+  "5Floral Design 7", 4523946311813,
+  "5Floral Design 8", 4523947753605,
+  "5Floral Design 9", 4523949555845,
+  "5Floral Design 10", 4523952144517,
+  "5Floral Design 11", 4523956011141,
+  "5Floral Design 12", 4523957649541,
+  "5Floral Design 13", 4523959910533,
+  "5Floral Design 14", 4523962499205,
+  "5Floral Design 15", 4523964039301,
+  "5Floral Design 16", 4523966333061,
+  "5Floral Design 17", 4523968233605,
 
-  "Geometric Pattern Design 1", 4524046549125,
-  "Geometric Pattern Design 2", 4524039569541,
-  "Geometric Pattern Design 3", 4524050317445,
-  "Geometric Pattern Design 4", 4524052250757,
-  "Geometric Pattern Design 5", 4524057165957,
-  "Geometric Pattern Design 6", 4524059951237,
+  "5Geometric Pattern Design 1", 4524046549125,
+  "5Geometric Pattern Design 2", 4524039569541,
+  "5Geometric Pattern Design 3", 4524050317445,
+  "5Geometric Pattern Design 4", 4524052250757,
+  "5Geometric Pattern Design 5", 4524057165957,
+  "5Geometric Pattern Design 6", 4524059951237,
 
-  "Japanese Art Design 1", 4528799350917, 
-  "Japanese Art Design 2", 4528813703301,
-  "Japanese Art Design 3", 4528816029829,
-  "Japanese Art Design 4", 4528817406085,
-  "Japanese Art Design 5", 4528819142789,
-  "Japanese Art Design 6", 4528821436549,
-  "Japanese Art Design 7", 4528822780037,
-  "Japanese Art Design 8", 4528826613893,
-  "Japanese Art Design 9", 4528828055685,
-  "Japanese Art Design 10", 4528829792389,
-  "Japanese Art Design 11", 4528831529093,
-  "Japanese Art Design 12", 4528833003653,
-  "Japanese Art Design 13", 4528837066885,
-  "Japanese Art Design 14", 4528870785157,
-  "Japanese Art Design 15", 4528873504901,
-  "Japanese Art Design 16", 4528881238149,
-  "Japanese Art Design 17", 4528883236997,
+  "5Japanese Art Design 1", 4528799350917, 
+  "5Japanese Art Design 2", 4528813703301,
+  "5Japanese Art Design 3", 4528817406085,
+  "5Japanese Art Design 4", 4528819142789,
+  "5Japanese Art Design 5", 4528816029829,
+  "5Japanese Art Design 6", 4528821436549,
+  "5Japanese Art Design 7", 4528822780037,
+  "5Japanese Art Design 8", 4528826613893,
+  "5Japanese Art Design 9", 4528828055685,
+  "5Japanese Art Design 10", 4528829792389,
+  "5Japanese Art Design 11", 4528831529093,
+  "5Japanese Art Design 12", 4528833003653,
+  "5Japanese Art Design 13", 4528837066885,
+  "5Japanese Art Design 14", 4528870785157,
+  "5Japanese Art Design 15", 4528873504901,
+  "5Japanese Art Design 16", 4528881238149,
+  "5Japanese Art Design 17", 4528883236997,
   // "Japanese Art Design 18", 4524140888197,
   // "Japanese Art Design 19", 4524143640709,
   // "Japanese Art Design 20", 4524146393221,
@@ -118,59 +118,59 @@ let cushionCoversIdList = [
   // "Japanese Art Design 24", 4524156420229,
   // "Japanese Art Design 25", 4524159402117,
 
-  "Surreal Design 1", 4524244238469,
-  "Surreal Design 2", 4524260130949,
-  "Surreal Design 3", 4524261671045,
-  "Surreal Design 4", 4524264063109,
-  "Surreal Design 5", 4524266324101,
-  "Surreal Design 6", 4524267765893,
-  "Surreal Design 7", 4524269240453,
-  "Surreal Design 8", 4524271992965,
-  "Surreal Design 9", 4524274090117,
-  "Surreal Design 10", 4524275990661,
-  "Surreal Design 11", 4524280578181,
-  "Surreal Design 12", 4524282675333,
-  "Surreal Design 13", 4524283789445,
-  "Surreal Design 14", 4524285591685,
-  "Surreal Design 15", 4524287787141,
-  "Surreal Design 16", 4524289065093,
+  "5Surreal Design 1", 4524244238469,
+  "5Surreal Design 2", 4524260130949,
+  "5Surreal Design 3", 4524261671045,
+  "5Surreal Design 4", 4524264063109,
+  "5Surreal Design 5", 4524266324101,
+  "5Surreal Design 6", 4524267765893,
+  "5Surreal Design 7", 4524269240453,
+  "5Surreal Design 8", 4524271992965,
+  "5Surreal Design 9", 4524274090117,
+  "5Surreal Design 10", 4524275990661,
+  "5Surreal Design 11", 4524280578181,
+  "5Surreal Design 12", 4524282675333,
+  "5Surreal Design 13", 4524283789445,
+  "5Surreal Design 14", 4524285591685,
+  "5Surreal Design 15", 4524287787141,
+  "5Surreal Design 16", 4524289065093,
 
-  "Beastie Boys", 4528657760389,
-  "Bono", 4528663134341,
-  "Bob Dylan", 4528667426949,
-  "Bruce Springsteen", 4528681255045,
-  "Johnny Cash", 4528670638213,
-  "John Lennon", 4528672866437,
-  "Leonard Cohen", 4528675324037,
-  "Liam Gallagher", 4528677585029,
-  "ZZ Top", 4528684990597,
-  "Musicians Set Of 9 Covers", 4528925376645,
+  "5Beastie Boys", 4528657760389,
+  "5Bono", 4528663134341,
+  "5Bob Dylan", 4528667426949,
+  "5Bruce Springsteen", 4528681255045,
+  "5Johnny Cash", 4528670638213,
+  "5John Lennon", 4528672866437,
+  "5Leonard Cohen", 4528675324037,
+  "5Liam Gallagher", 4528677585029,
+  "5ZZ Top", 4528684990597,
+  "5Musicians Set Of 9 Covers", 4528925376645,
 
-  "Seahorse", 4528998613125,
-  "Green Seahorse", 4529025777797,
-  "Green Coral Design 1", 4529030463621,
-  "Green Coral Design 2", 4529032233093,
-  "Green Shell", 4529033740421,
-  "Green Starfish", 4529034920069,
-  "Orange Coral", 4529036689541,
-  "Orange Starfish", 4529038327941,
-  "Shell", 4529040064645,
+  "5Seahorse", 4528998613125,
+  "5Green Seahorse", 4529025777797,
+  "5Green Coral Design 1", 4529030463621,
+  "5Green Coral Design 2", 4529032233093,
+  "5Green Shell", 4529033740421,
+  "5Green Starfish", 4529034920069,
+  "5Orange Coral", 4529036689541,
+  "5Orange Starfish", 4529038327941,
+  "5Shell", 4529040064645,
 
-  "Harlequin With Guitar by Picasso", 4559937405061,
-  "Woman In A Shawl by Picasso", 4559942910085,
-  "The Old Guitarist by Picasso", 4559946154117,
-  "The Matador by Picasso", 4559959294085,
-  "Woman Crying by Picasso", 4559966863493,
-  "Les Demoiselles d'Avignon by Picasso", 4559992553605,
-  "La Muse by Picasso", 4560022470789,
-  "Courtsean With Necklace Of Gems by Picasso", 4560039084165,
-  "Harlequin by Picasso", 4560051372165,
-  "Claude With A Ball by Picasso", 4560285368453,
-  "The Yellow Shirt by Picasso", 4560289562757,
-  "Marie-Therese Walter by Picasso", 4560292348037,
-  "Les Femmes d'Alger by Picasso", 4560298082437,
-  "Three Musicians by Picasso", 4560332226693,
-  "Girl Before A Mirror by Picasso", 4560334291077,
+  "5Harlequin With Guitar by Picasso", 4559937405061,
+  "5Woman In A Shawl by Picasso", 4559942910085,
+  "5The Old Guitarist by Picasso", 4559946154117,
+  "5The Matador by Picasso", 4559959294085,
+  "5Woman Crying by Picasso", 4559966863493,
+  "5Les Demoiselles d'Avignon by Picasso", 4559992553605,
+  "5La Muse by Picasso", 4560022470789,
+  "5Courtsean With Necklace Of Gems by Picasso", 4560039084165,
+  "5Harlequin by Picasso", 4560051372165,
+  "5Claude With A Ball by Picasso", 4560285368453,
+  "5The Yellow Shirt by Picasso", 4560289562757,
+  "5Marie-Therese Walter by Picasso", 4560292348037,
+  "5Les Femmes d'Alger by Picasso", 4560298082437,
+  "5Three Musicians by Picasso", 4560332226693,
+  "5Girl Before A Mirror by Picasso", 4560334291077,
 
   "Nautical Set of 5 (Design 1)", 4560359686277,
   "Nautical Set of 5 (Design 2)", 4560363225221,
@@ -181,84 +181,84 @@ let cushionCoversIdList = [
   "Nautical Set of 5 (Design 7)", 4560387408005,
   "Nautical Set of 5 (Design 8)", 4560388784261,
 
-  "As High As Honor (Game Of Thrones)", 4560671867013,
-  "Family Duty Honor (Game Of Thrones)", 4560676388997,
-  "Fire And Blood (Game Of Thrones)", 4560677798021,
-  "Hear Me Roar (Game Of Thrones)", 4560678944901,
-  "Our Blades Are Sharp (Game Of Thrones)", 4560683663493,
-  "Ours Is The Fury (Game Of Thrones)", 4560688971909,
-  "Unbowed Unbent Unbroken (Game Of Thrones)", 4560693297285,
-  "We Do Not Sow (Game Of Thrones)", 4560696737925,
-  "Winter Is Coming (Game Of Thrones)", 4560700702853,
-  "C-3PO (Star Wars)", 4560705683589,
-  "Darth Vader (Star Wars)", 4560710271109,
-  "Millenium Falcon (Star Wars)", 4560715677829,
-  "R2-D2 (Star Wars)", 4560719839365,
-  "Walker (Star Wars)", 4560723837061,
-  "Star Wars Logo", 4560727933061,
-  "Stormtrooper (Star Wars) Design 1", 4560737140869,
-  "Stormtrooper (Star Wars) Design 2", 4560742023301,
-  "Yoda (Star Wars)", 4560749133957,
+  "5As High As Honor (Game Of Thrones)", 4560671867013,
+  "5Family Duty Honor (Game Of Thrones)", 4560676388997,
+  "5Fire And Blood (Game Of Thrones)", 4560677798021,
+  "5Hear Me Roar (Game Of Thrones)", 4560678944901,
+  "5Our Blades Are Sharp (Game Of Thrones)", 4560683663493,
+  "5Ours Is The Fury (Game Of Thrones)", 4560688971909,
+  "5Unbowed Unbent Unbroken (Game Of Thrones)", 4560693297285,
+  "5We Do Not Sow (Game Of Thrones)", 4560696737925,
+  "5Winter Is Coming (Game Of Thrones)", 4560700702853,
+  "5C-3PO (Star Wars)", 4560705683589,
+  "5Darth Vader (Star Wars)", 4560710271109,
+  "5Millenium Falcon (Star Wars)", 4560715677829,
+  "5R2-D2 (Star Wars)", 4560719839365,
+  "5Walker (Star Wars)", 4560723837061,
+  "5Star Wars Logo", 4560727933061,
+  "5Stormtrooper (Star Wars) Design 1", 4560737140869,
+  "5Stormtrooper (Star Wars) Design 2", 4560742023301,
+  "5Yoda (Star Wars)", 4560749133957,
 
-  "Basset Hound", 4571817148549,
-  "Bichon Frise Design 1", 4571820720261,
-  "Bichon Frise Design 2", 4571821441157,
-  "Border Collie", 4571822719109,
-  "Chihuahua", 4571824521349,
-  "Dachshund (Sausage Dog) Design 1", 4571828781189,
-  "Dachshund (Sausage Dog) Design 2", 4571831304325,
-  "Maltese", 4571833729157,
-  "Miniature Schnauzer", 4571835662469,
-  "Shih Tzu", 4571838316677,
-  "Staffordshire Bull Terrier", 4571838939269,
+  "5Basset Hound", 4571817148549,
+  "5Bichon Frise Design 1", 4571820720261,
+  "5Bichon Frise Design 2", 4571821441157,
+  "5Border Collie", 4571822719109,
+  "5Chihuahua", 4571824521349,
+  "5Dachshund (Sausage Dog) Design 1", 4571828781189,
+  "5Dachshund (Sausage Dog) Design 2", 4571831304325,
+  "5Maltese", 4571833729157,
+  "5Miniature Schnauzer", 4571835662469,
+  "5Shih Tzu", 4571838316677,
+  "5Staffordshire Bull Terrier", 4571838939269,
 
-  "Boxing Cat (Design 1)", 4571986526341,
-  "Boxing Cat (Design 2)", 4572019818629,
-  "Boxing Cat (Design 3)", 4572020637829,
-  "Boxing Cat (Design 4)", 4572022046853,
+  "5Boxing Cat (Design 1)", 4571986526341,
+  "5Boxing Cat (Design 2)", 4572019818629,
+  "5Boxing Cat (Design 3)", 4572020637829,
+  "5Boxing Cat (Design 4)", 4572022046853,
   "Boxing Cat (Design 5)", 4572024275077,
 
-  "Flamingo (Design 1)", 4572056027269,
-  "Flamingo (Design 2)", 4572057174149,
-  "Flamingo (Design 3)", 4572059271301,
-  "Flamingo (Design 4)", 4572063629445,
-  "Blue Budgie", 4572183822469,
-  "Blue Masked Lovebird", 4572187689093,
-  "Cockatiel", 4572191490181,
-  "Green Parrot", 4572192997509,
-  "Orange Parrot", 4572193718405,
-  "Kingfisher (Design 1)", 4576155893893,
-  "Kingfisher (Design 2)", 4576158056581,
-  "Kingfisher (Design 3)", 4576160284805,
-  "Kingfisher (Design 4)", 4576163725445,
+  "5Flamingo (Design 1)", 4572056027269,
+  "5Flamingo (Design 2)", 4572057174149,
+  "5Flamingo (Design 3)", 4572059271301,
+  "5Flamingo (Design 4)", 4572063629445,
+  "5Blue Budgie", 4572183822469,
+  "5Blue Masked Lovebird", 4572187689093,
+  "5Cockatiel", 4572191490181,
+  "5Green Parrot", 4572192997509,
+  "5Orange Parrot", 4572193718405,
+  "5Kingfisher (Design 1)", 4576155893893,
+  "5Kingfisher (Design 2)", 4576158056581,
+  "5Kingfisher (Design 3)", 4576160284805,
+  "5Kingfisher (Design 4)", 4576163725445,
   "Kingfisher (Design 5)", 4576165363845,
 
-  "Butterflies (Design 1)", 4572238282885,
-  "Butterflies (Design 2)", 4572239134853,
-  "Butterflies (Design 3)", 4572240117893,
-  "Butterflies (Design 4)", 4572241330309,
-  "Butterflies (Design 5)", 4572244181125,
-  "Butterflies (Design 6)", 4572245033093,
-  "Butterflies (Design 7)", 4572248866949,
-  "Butterflies (Design 8)", 4572249620613,
+  "5Butterflies (Design 1)", 4572238282885,
+  "5Butterflies (Design 2)", 4572239134853,
+  "5Butterflies (Design 3)", 4572240117893,
+  "5Butterflies (Design 4)", 4572241330309,
+  "5Butterflies (Design 5)", 4572244181125,
+  "5Butterflies (Design 6)", 4572245033093,
+  "5Butterflies (Design 7)", 4572248866949,
+  "5Butterflies (Design 8)", 4572249620613,
 
-  "Cow (Design 1)", 4572262203525,
-  "Cow (Design 2)", 4572265316485,
-  "Cow (Design 3)", 4572265873541,
-  "Cow (Design 4)", 4572266496133,
-  "Pig", 4572267151493,
-  "Rooster (Design 1)", 4576179912837,
-  "Rooster (Design 2)", 4576181026949,
-  "Rooster (Design 3)", 4576182698117,
+  "5Cow (Design 1)", 4572262203525,
+  "5Cow (Design 2)", 4572265316485,
+  "5Cow (Design 3)", 4572265873541,
+  "5Cow (Design 4)", 4572266496133,
+  "5Pig", 4572267151493,
+  "5Rooster (Design 1)", 4576179912837,
+  "5Rooster (Design 2)", 4576181026949,
+  "5Rooster (Design 3)", 4576182698117,
 
-  "Deer", 4576198000773,
-  "Elephant (Design 1)", 4576200786053,
-  "Elephant (Design 2)", 4576202522757,
-  "Lion", 4576204357765,
-  "Lion or Tiger", 4576212484229,
-  "Tigers (Design 1)", 4576206127237,
-  "Tigers (Design 2)", 4576207929477,
-  "Tigers (Design 3)", 4576209076357,
+  "5Deer", 4576198000773,
+  "5Elephant (Design 1)", 4576200786053,
+  "5Elephant (Design 2)", 4576202522757,
+  "5Lion", 4576204357765,
+  "5Lion or Tiger", 4576212484229,
+  "5Tigers (Design 1)", 4576206127237,
+  "5Tigers (Design 2)", 4576207929477,
+  "5Tigers (Design 3)", 4576209076357,
 
 
   "", ""
@@ -415,7 +415,7 @@ let loadingAnimation = document.getElementById('loading');
 let collectionComponent = document.getElementById('collection-component')
 let footer = document.getElementById('footer');
 
-if(pageID === "Shipping & Payment") {
+if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
     footer.style.display = "block";
 }
 
@@ -589,6 +589,7 @@ function runSearch() {
 function displaySearch() {
 
     footer.style.display = "none";
+    footer.style.top = "190px";
     loadingAnimation.style.display = "block";
     loadingAnimation.style.top = "120px";
 
@@ -599,7 +600,7 @@ function displaySearch() {
     document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.15)";
 
 
-    if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals") {
+    if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals" || pageID === "About Us" || pageID === "Contact") {
           document.getElementById('collection-component').style.display = "block";
           document.getElementById('large-white-box').style.display = "block";
 
@@ -614,7 +615,7 @@ function displaySearch() {
           document.getElementById('homepage-contents').style.display = "none";
     }
 
-    if(pageID === "Shipping & Payment") {
+    if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
           document.getElementById('shipping-page-contents').style.display = "none";
     }
 
@@ -632,9 +633,9 @@ function displaySearch() {
       document.getElementById('search-results-text-unsuccessful').innerHTML = 
       `<span id="sorry">Sorry we couldn't find anything to match your search  <br>"` + searchEntryStr + '"</span>' 
       + "<br><br><br>Can't find what you're looking for? <br>Why not <a href='create-your-own.html' id='create-your-own'>Create Your Own?</a>";
-
+      document.getElementById('footer').style.display = "block";
+      document.getElementById('footer').style.top = "572px";
       document.getElementById('go-back').setAttribute('href', pageLink);
-
     }
 
     // display text showing how many search results were found
@@ -660,7 +661,8 @@ function displaySearch() {
         document.getElementById('breadcrumbs').style.visibility = "visible";
         document.getElementById('go-back-message').style.display = "none";
         document.getElementById('search-results-text').innerHTML = "";
-        document.getElementById('text-container').style.display = "block";        
+        document.getElementById('text-container').style.display = "block";   
+        footer.style.display = "block";
 
       if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
         document.getElementById('breadcrumbs').style.visibility = "hidden";
@@ -669,6 +671,7 @@ function displaySearch() {
         document.getElementById('text-container').style.display = "none"; 
         document.getElementById('collection-component').style.display = "none";
         document.getElementById('large-white-box').style.display = "none";
+        footer.style.display = "none";
       }
 
       if(pageID === "Browse By Category" || pageID === "Animals") {
@@ -679,7 +682,7 @@ function displaySearch() {
             document.getElementById('homepage-contents').style.display = "block";
       }
 
-      if(pageID === "Shipping & Payment") {
+      if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
         document.getElementById('shipping-page-contents').style.display = "block";
         document.getElementById('go-back-message').style.display = "none";
         document.getElementById('search-results-text').innerHTML = "";
@@ -1052,7 +1055,7 @@ function displaySearch() {
 
 (function () {
 
-          if(pageID != "Home" && pageID != "Browse By Category" && pageID != "Animals" && pageID != "Shipping & Payment") {
+          if(pageID != "Home" && pageID != "Browse By Category" && pageID != "Animals" && pageID != "Shipping & Payment" && pageID != "About Us" && pageID != "Contact") {
               loadingAnimation.style.display = "block";
           }
 

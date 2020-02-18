@@ -9,6 +9,8 @@
     <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/fontawesome.min.css">
     <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/solid.min.css">
     <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/brands.min.css">
+        <link rel="stylesheet" type='text/css' href="node_modules/fortawesome/fa/css/regular.min.css">
+
     <link href="styles.css" rel="stylesheet">
 </head>
 
@@ -129,26 +131,49 @@
 
 
     <main>
-        <div id="text-container">
-            <div id="breadcrumbs">
-                <div class="breadcrumb-links"><a href="index.html">Home</a></div>
-                <div>/</div>
-                <div class="breadcrumb-links"><a href="categories.html">Categories</a></div>
-                <div>/</div>
-                <div class="breadcrumb-links"><a href="all-animals.html">Animals</a></div>
-            </div>
-            <div id="page-title-2">Animals</div>
-            <div id="page-title-3">Feast your eyes on our unique range of food and drink cushion covers, from bananas to beer,<br> cake to creamsicles. These are quite literally our most mouthwatering designs!</div>
+        <div style="display: none; background-image: none" id="text-container">
+            <!-- <div id="page-title-2"></div> -->
+            <!-- <div id="page-title-3"></div> -->
         </div>
         <div id='search-results-text'></div>
         <div id='search-results-text-unsuccessful'></div>
         <div id='collection-component'></div>
         <div id="large-white-box"></div>
         <div id="loading"><video autoplay loop muted width="106px" src="loading.mp4"></div>
-        
-        <a id="go-back"><div id="go-back-message">Take me back</div></a>
-    </main>
 
+<a id="go-back"><div id="go-back-message">Take me back</div></a>
+
+<div id="shipping-page-contents">
+        <div id="breadcrumbs">
+            <div class="breadcrumb-links"><a href="index.html">Home</a></div>
+            <div>/</div>
+            <div class="breadcrumb-links"><a href="about.html">About Us</a></div>
+        </div>
+        
+
+
+    <div id="page-title-2">About Us</div>
+    <div id="page-text">
+        <br>
+        Hi! It's Lewis and Danielle, founders of Coverful. Thanks for stopping by! <i class="far fa-smile"></i>
+
+<br><br>We’ll tell you a little about us and the store, so you can begin your cushion cover journey in full confidence that we have everything covered.
+ 
+<br><br>We took our first step into Coverland in the spring of 2014. Over the next 6 years we gained a following of cushion cover lovers across the UK and worldwide.
+
+<br><br>Fast forward to 2020 and we have ourselves a shiny new website (which you are on right now!).
+
+<br><br>Coverful is still run by us, along with a few fantastic helpers.
+
+<br><br>Since our humble beginnings in Brighton, we have developed friendships and partnerships with some of the most wonderful suppliers around the world, so we can bring you amazing designs at the best prices you'll find online.
+
+<br><br>Give us a shout if you have any questions (hello@coverful.co.uk)
+
+<br><br>(signature to go here)
+        <br>
+    </div>
+</div>
+    </main>
 
     <footer id="footer">
         <div id="grey-part-of-footer">
@@ -176,11 +201,11 @@
             Coverful Copyright &#169; 2020 &nbsp;|&nbsp; <a href="privacy-policy.html"> Privacy Policy</a> &nbsp;| &nbsp; Web design by Paul Evans
         </div>
     </footer>
-    
+
     <script>
-        let collectionID = "169238790277";
-        let pageID = "All Animals";
-        let pageLink = "all-animals.html";
+        let collectionID = [];
+        let pageID = "About Us";
+        let pageLink = "about.html";
     </script>
 
     <script src="index.js"></script>
