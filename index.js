@@ -1,29 +1,13 @@
 let cushionCoversIdList = [
   "Albert Einstein", 4503008018565,
-  // "Bob Marley", 4503047110789,
   "Bruce Lee", 4503012933765,
   "Charlie Chaplin", 4503001727109,
   "Che Guevara", 4503005560965,
-  // "David Bowie", 4503023878277,
-  // "Elvis Presley (Design 1)", 4503031283845,
-  // "Elvis Presley (Design 2)", 4503036067973,
-  // "Frank Zappa", 4503065133189,
   "Ghandi", 4503010476165,
-  // "Grateful Dead Jerry Garcia", 4503070474373,
-  // "Jim Morrison (Design 1)", 4503051698309,
-  // "Jim Morrison (Design 2)", 4503057334405,
-  // "Jimi Hendrix (Design 1)", 4503039443077,
-  // "Jimi Hendrix (Design 2)", 4503041278085,
-  // "Jimi Hendrix (Design 3)", 4503043735685,
-  // "Jimi Hendrix (Design 4)", 4503045210245,
   "Mark Zuckerberg", 4503018307717,
   "Morgan Freeman", 4503016669317,
   "Mr Bean", 4502983803013,
   "Nicholas Cage", 4502995927173,
-  // "Paul McCartney (Beatles)", 4503062315141,
-  // "Soundgarden Chris Cornell", 4503068082309,
-  // "Stevie Ray Vaughan", 4503074472069,
-
 
   "Bacon", 4517497995397,
   "Bananas", 4517505466501,
@@ -96,7 +80,6 @@ let cushionCoversIdList = [
   "Stevie Ray Vaughan", 4503074472069,
   "Vase with Poppies by Van Gogh", 4591658238085,
   "Winking Woman in Sunglasses - Pop Art", 4585547268229,
-
 
   "Floral Design 1", 4523910660229,
   "Floral Design 2", 4523936809093,
@@ -348,7 +331,16 @@ let cushionCoversIdList = [
   // these empty strings is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
   ];
 
-  // the following for statement converts all the strings in the cushionCoversIdList array to lowercase
+
+let searchEntryStr;
+let uniqueResults;
+let nameArray;
+let loadingAnimation = document.getElementById('loading');
+let collectionComponent = document.getElementById('collection-component')
+
+
+
+  // converting all the strings in the cushionCoversIdList array to lowercase
   for(i=0; i<cushionCoversIdList.length; i++) {
     if(typeof cushionCoversIdList[i] === "string") {
       let lowercaseName = cushionCoversIdList[i].toLowerCase();
@@ -356,23 +348,26 @@ let cushionCoversIdList = [
     }
   }
 
+
+
+
+// controlling appearance of searchbar
 const searchBar = document.getElementById('search-field');
 const whiteness = document.getElementById('whiteness');
-
-
 searchBar.addEventListener("click", makeSearchBarBrighter);
 searchBar.addEventListener("focusout", makeSearchBarDuller);
-
-
 function makeSearchBarBrighter() {
     whiteness.style.opacity = "0.84";
+    searchBar.style.color = "rgb(0,0,0,0.73)";
 }
-
 function makeSearchBarDuller() {
     whiteness.style.opacity = "0";
 }
 
 
+
+
+// hiding the collection component for certain pages, and changing the styling of the search suggestions for certain pages
 if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals") {
     document.getElementById('collection-component').style.display = "none";
     document.getElementById('large-white-box').style.display = "none";
@@ -381,46 +376,45 @@ if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Animals")
 }
 
 
+
+
+// controlling the mouseover behaviour of the buttons in the top right of the screen
 let shippingCircle = document.getElementById('shipping-circle');
 let contactCircle = document.getElementById('contact-circle');
-let facebookCircle = document.getElementById('facebook-circle');
-
+let facebookCircle = document.getElementById('instagram-circle');
 shippingCircle.addEventListener("mouseover", onMouseoverShippingCircle);
 shippingCircle.addEventListener("mouseleave", onMouseleaveShippingCircle);
 contactCircle.addEventListener("mouseover", onMouseoverContactCircle);
 contactCircle.addEventListener("mouseleave", onMouseleaveContactCircle);
-
-
 function onMouseoverShippingCircle() {
     hideContactCircle();
-    hideFacebookCircle();
-    shippingCircle.style.background = "rgb(255,255,255,0.4)";
-    // shippingCircle.style.transition = "clip-path 0.5s ease-in-out, background 0.5s ease-in-out";
+    // hideFacebookCircle();
+    shippingCircle.style.background = "rgb(210,237,246)";
+    shippingCircle.style.transition = "clip-path 0.67s 100ms ease-in-out, background 500ms 0s ease-in-out";
 }
 function onMouseleaveShippingCircle() {
     showContactCircle();
-    showFacebookCircle();
-    // shippingCircle.style.transition = "clip-path 0.5s ease-in-out, background 0.5s ease-in-out";
-    shippingCircle.style.background = "rgb(0,0,0,0.05)";
-
+    // showFacebookCircle();
+    shippingCircle.style.background = "0";
+    shippingCircle.style.transition = "clip-path 0.8s ease-in-out, background 550ms 0.35s ease-in-out";
 }
 function onMouseoverContactCircle() {
     hideFacebookCircle();
-    contactCircle.style.background = "rgb(255,255,255,0.4)";
+    contactCircle.style.background = "rgb(210,237,246)";
+    contactCircle.style.transition = "clip-path 0.67s 100ms ease-in-out, background 500ms 0s ease-in-out";
 }
-
 function onMouseleaveContactCircle() {
     showFacebookCircle();
-    contactCircle.style.background = "rgb(0,0,0,0.05)";
+    contactCircle.style.background = "0";
+    contactCircle.style.transition = "clip-path 0.8s ease-in-out, background 550ms 0.35s ease-in-out";
 }
-
 function hideContactCircle() {
     contactCircle.style.opacity = "0";
-    contactCircle.style.transition = "clip-path 0.67s ease-in-out, opacity 0.15s ease-in-out, background 0.5s ease-in-out";
+    contactCircle.style.transition = "clip-path 0.8s ease-in-out, opacity 0.15s ease-in-out, background 1s ease-in-out";
 }
 function showContactCircle() {
     contactCircle.style.opacity = "1";
-    contactCircle.style.transition = "clip-path 0.67s ease-in-out, opacity 0.4s 0.3s ease, background 0.5s ease-in-out";
+    contactCircle.style.transition = "clip-path 0.8s ease-in-out, opacity 0.4s 0.3s ease, background 1s ease-in-out";
 }
 function hideFacebookCircle() {
     facebookCircle.style.opacity = "0";
@@ -431,21 +425,10 @@ function showFacebookCircle() {
     facebookCircle.style.transition = "opacity 0.4s 0.3s ease, background 0.2s ease-in-out";
 }
 
-searchBar.addEventListener('click', setColour);
-
-function setColour() {
-      searchBar.style.color = "rgb(0,0,0,0.73";
-}
-
-// searchBar.addEventListener('keyup', executeSearch);   
 
 
 
-var searchEntryStr;
-var uniqueResults;
-var nameArray;
-
-
+// controlling what happens when a user clicks one of the search suggestions
 let searchResult1 = document.getElementById('search-result-1');
 let searchResult2 = document.getElementById('search-result-2');
 let searchResult3 = document.getElementById('search-result-3');
@@ -453,7 +436,6 @@ let searchResult4 = document.getElementById('search-result-4');
 let searchResult5 = document.getElementById('search-result-5');
 let searchResult6 = document.getElementById('search-result-6');
 let searchResult7 = document.getElementById('search-result-7');
-
 searchResult1.style.display = "none";
 searchResult2.style.display = "none";
 searchResult3.style.display = "none";
@@ -461,7 +443,6 @@ searchResult4.style.display = "none";
 searchResult5.style.display = "none";
 searchResult6.style.display = "none";
 searchResult7.style.display = "none";
-
 document.getElementById("search-result-1").addEventListener("click", grabAndSearch);
 document.getElementById("search-result-2").addEventListener("click", grabAndSearch);
 document.getElementById("search-result-3").addEventListener("click", grabAndSearch);
@@ -469,7 +450,7 @@ document.getElementById("search-result-4").addEventListener("click", grabAndSear
 document.getElementById("search-result-5").addEventListener("click", grabAndSearch);
 document.getElementById("search-result-6").addEventListener("click", grabAndSearch);
 document.getElementById("search-result-7").addEventListener("click", grabAndSearch);
-
+document.body.addEventListener('click', searchResultCloser);
 function grabAndSearch(e) {
     var searchSuggestion = e.target.innerHTML;
     searchBar.value = searchSuggestion;
@@ -478,9 +459,6 @@ function grabAndSearch(e) {
     displaySearch();
     searchResultCloser();
 }
-
-document.body.addEventListener('click', searchResultCloser);
-
 function searchResultCloser(){
     searchResult1.style.display = "none";
     searchResult2.style.display = "none";
@@ -493,18 +471,16 @@ function searchResultCloser(){
     whiteness.style.borderRadius = "10px";
 }
 
-let loadingAnimation = document.getElementById('loading');
 
-let collectionComponent = document.getElementById('collection-component')
+
+
+// controlling when the footer is displayed
 let footer = document.getElementById('footer');
-
-if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
+if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact" || pageID === "Cookies Policy") {
     footer.style.display = "block";
 }
-
 // the following ResizeObserver ensures that the footer only loads after the products have loaded. It observes a change in height of
-// the collectionComponent when the results load
-
+// the collectionComponent when the products load
 const observer = new ResizeObserver(entries => {
     for (let entry of entries) {
       if(entry.contentRect.height > 0) {
@@ -512,13 +488,12 @@ const observer = new ResizeObserver(entries => {
       }
     }
 });
-
 observer.observe(collectionComponent);
 
+
+
+
 searchBar.addEventListener('keyup', performSearch);   
-
-document.getElementById("search-icon").addEventListener('click', displaySearch);
-
 function performSearch(e) {
     runSearch();
     var x = e.keyCode;
@@ -528,7 +503,6 @@ function performSearch(e) {
         searchResultCloser();
     }
 }
-
 function runSearch() {
     searchEntryStr = searchBar.value;
     const searchEntryStrLowerCase = searchEntryStr.toLowerCase();
@@ -667,27 +641,22 @@ function runSearch() {
 }
 
 
-
+document.getElementById("search-icon").addEventListener('click', displaySearch);
 
 function displaySearch() {
 
     footer.style.display = "none";
-    footer.style.top = "190px";
+    footer.style.top = "186px";
     loadingAnimation.style.display = "block";
     loadingAnimation.style.top = "120px";
-
-
     searchBar.style.color = "rgb(0,0,0,0.5";
-
     document.getElementById("search-results").style.backdropFilter = "blur(60px)";
     document.getElementById("search-results").style.backgroundColor = "rgb(0,0,0,0.15)";
+    document.getElementById('text-container').style.display = "none"; 
 
-
-    if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals" || pageID === "About Us" || pageID === "Contact") {
+    if(pageID === "Home" || pageID === "Browse By Category" || pageID === "Shipping & Payment" || pageID === "Animals" || pageID === "About Us" || pageID === "Contact" || pageID === "Cookies Policy") {
           document.getElementById('collection-component').style.display = "block";
           document.getElementById('large-white-box').style.display = "block";
-
-          
     }
 
     if(pageID === "Browse By Category" || pageID === "Animals") {
@@ -698,14 +667,12 @@ function displaySearch() {
           document.getElementById('homepage-contents').style.display = "none";
     }
 
-    if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
+    if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact" || pageID === "Cookies Policy") {
           document.getElementById('shipping-page-contents').style.display = "none";
     }
 
 
-    document.getElementById('text-container').style.display = "none"; 
-
-    // display message if no search results are found
+    // what happens if no search results are found
     if(uniqueResults.length === 0) {
       loadingAnimation.style.display = "none";
       document.getElementById('breadcrumbs').style.visibility = "hidden";
@@ -765,7 +732,7 @@ function displaySearch() {
             document.getElementById('homepage-contents').style.display = "block";
       }
 
-      if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact") {
+      if(pageID === "Shipping & Payment" || pageID === "About Us" || pageID === "Contact" || pageID === "Cookies Policy") {
         document.getElementById('shipping-page-contents').style.display = "block";
         document.getElementById('go-back-message').style.display = "none";
         document.getElementById('search-results-text').innerHTML = "";
