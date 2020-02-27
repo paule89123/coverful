@@ -10,6 +10,26 @@
     src: url("DomaineDisp-Semibold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: bodoni24medium;
+    src: url("Bodoni-24-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: bodoni24bold;
+    src: url("Bodoni-24-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: bodoni36medium;
+    src: url("Bodoni-24-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: bodoni36bold;
+    src: url("Bodoni-24-Bold.otf") format("opentype");
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -1165,6 +1185,7 @@ textarea {
 	position: relative;
 	cursor: pointer;
 	transition: all 200ms ease;
+	box-shadow: 0px 10px 15px -8px rgb(100,213,195, 0.9);
 }
 
 #submit:hover {
@@ -1172,6 +1193,7 @@ textarea {
 	color: #64d5c3;
 	border-color: #64d5c3;
 	transition: all 200ms ease;
+	box-shadow: 0px 10px 15px -8px rgb(100,213,195);
 }
 
 #form input, textarea {
@@ -1327,7 +1349,7 @@ p {
 }
 
 h2 {
-	margin: 26px 0px 14px 0px;
+	margin: 26px 0px 12px 0px;
 	font-size: 22px;
 }
 
@@ -1342,7 +1364,7 @@ h2 {
 }
 
 #page-text p {
-		font-size: 17.5px;
+		font-size: 18px;
 }
 
 #shipping-page-contents img {
@@ -1376,13 +1398,13 @@ margin-left: -36px;
 }
 
 #shipping-page-text h3 {
-	margin: 48px 0px 8px 0px;
+	margin: 27px 0px 9px 0px;
 }
 
 #est {
 	width: 14.44%;
 	margin-right: 63px;
-	opacity: 0.2;
+	opacity: 0.26;
 }
 
 
@@ -1398,7 +1420,14 @@ margin-left: -36px;
 }
 
 #leading-paragraph {
-	/*font-family: domaine, sans-serif;*/
-	font-size: 26px;
-	line-height: 1.2;
+	font-family: bodoni24medium, sans-serif;
+	font-size: 24px;
+	line-height: 1.32;
+}
+
+#contact-page-text {
+	padding: 10px 20% 15px 20%;
+	line-height: 1.4;
+	font-family: futura-pt-book, sans-serif;
+	font-size: 18px;
 }

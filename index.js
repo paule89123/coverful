@@ -123,14 +123,6 @@ let cushionCoversIdList = [
   "Japanese Art Design 15", 4528873504901,
   "Japanese Art Design 16", 4528881238149,
   "Japanese Art Design 17", 4528883236997,
-  // "Japanese Art Design 18", 4524140888197,
-  // "Japanese Art Design 19", 4524143640709,
-  // "Japanese Art Design 20", 4524146393221,
-  // "Japanese Art Design 21", 4524147900549,
-  // "Japanese Art Design 22", 4524150161541,
-  // "Japanese Art Design 23", 4524154290309,
-  // "Japanese Art Design 24", 4524156420229,
-  // "Japanese Art Design 25", 4524159402117,
 
   "Surreal Design 1", 4524244238469,
   "Surreal Design 2", 4524260130949,
@@ -892,7 +884,8 @@ function displaySearch() {
                 "width": "400px",
               },
               "button": {
-                "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+                // "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+                "background-image": "black",
                 "font-size": "12px",
                 // "font-weight": "500",
                 "font-family": "futura, sans-serif",
@@ -1260,17 +1253,17 @@ function displaySearch() {
               "button": {
                 // "position": "absolute",
                 // "bottom": "100px",
-                "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
-                "border": "0",
+                // "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+                "border": "1px solid black",
                 "font-size": "12px",
                 // "font-weight": "500",
                 "font-family": "futura, sans-serif",
                 "color": "white",
                 ":hover": {
-                  "color": "#1e3264",
-                  "background-color": "#0f4d00"
+                  "color": "rgb(17,17,17)",
+                  "background-color": "white"
                 },
-                "background-color": "#115500",
+                "background-color": "rgb(17,17,17)",
                 ":focus": {
                   "background-color": "#0f4d00"
                 },
