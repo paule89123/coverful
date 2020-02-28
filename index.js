@@ -885,21 +885,22 @@ function displaySearch() {
               },
               "button": {
                 // "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
-                "background-image": "black",
+                "border": "2px solid rgb(17,17,17)",
                 "font-size": "12px",
                 // "font-weight": "500",
                 "font-family": "futura, sans-serif",
                 "color": "white",
                 ":hover": {
-                  "color": "#1e3264",
-                  "background-color": "#0f4d00"
+                  "color": "rgb(17,17,17)",
+                  "background-color": "white"
                 },
-                "background-color": "#115500",
+                "background-color": "rgb(17,17,17)",
                 ":focus": {
-                  "background-color": "#0f4d00"
+                  "background-color": "rgb(17,17,17)"
                 },
                 "border-radius": "0px",
-                "padding": "15px 105px 15px 105px",
+                "padding-left": "45px",
+                "padding-right": "45px",
               },
               "title": {
                 "font-family": "futura, sans-serif",
@@ -1254,7 +1255,7 @@ function displaySearch() {
                 // "position": "absolute",
                 // "bottom": "100px",
                 // "background-image": "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
-                "border": "1px solid black",
+                "border": "2px solid rgb(17,17,17)",
                 "font-size": "12px",
                 // "font-weight": "500",
                 "font-family": "futura, sans-serif",
@@ -1265,11 +1266,14 @@ function displaySearch() {
                 },
                 "background-color": "rgb(17,17,17)",
                 ":focus": {
-                  "background-color": "#0f4d00"
+                  "background-color": "rgb(17,17,17)"
+                },
+                ":active": {
+                  "background-color": "rgb(17,17,17)"
                 },
                 "border-radius": "0px",
-                "padding-left": "15px",
-                "padding-right": "15px",
+                "padding-left": "45px",
+                "padding-right": "45px",
               },
               "title": {
                 "font-family": "futura, sans-serif",

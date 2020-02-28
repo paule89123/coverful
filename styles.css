@@ -1185,7 +1185,7 @@ textarea {
 	position: relative;
 	cursor: pointer;
 	transition: all 200ms ease;
-	box-shadow: 0px 10px 15px -8px rgb(100,213,195, 0.9);
+	box-shadow: 0px 6px 24px 0px rgb(100,213,195, 0.2);
 }
 
 #submit:hover {
@@ -1193,7 +1193,7 @@ textarea {
 	color: #64d5c3;
 	border-color: #64d5c3;
 	transition: all 200ms ease;
-	box-shadow: 0px 10px 15px -8px rgb(100,213,195);
+	box-shadow: 0px 8px 24px -9px rgb(100,213,195, 0.5);
 }
 
 #form input, textarea {
