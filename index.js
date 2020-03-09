@@ -318,6 +318,15 @@ let cushionCoversIdList = [
   "Tigers (Design 2)", 4576207929477,
   "Tigers (Design 3)", 4576209076357,
 
+  "Ginevra de' Benci by Leonardo Da Vinci", 4675521478789,
+  "La Belle Ferronniere by Leonardo Da Vinci", 4675530195077,
+  "Lady with an Ermine by Leonardo Da Vinci", 4675524329605,
+  "Leda c. 1530 by Leonardo Da Vinci", 4675550150789,
+  "Madonna Litta by Leonardo Da Vinci", 4675536879749,
+  "Madonna of the Yarnwinder by Leonardo Da Vinci", 4675544383621,
+  "Mona Lisa by Leonardo Da Vinci", 4675511484549,
+  "Saint John the Baptist by Leonardo Da Vinci", 4675532161157,
+  "Self Portrait by Leonardo Da Vinci", 4675517677701,
 
   "", ""
   // these empty strings is required as the final element because the last element in the array sometimes gets added to the search results for an unknown reason
