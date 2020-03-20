@@ -100,7 +100,7 @@ let cushionCoversIdList = [
 "Rick and morty art", 4700174385285,
 "Rick and morty collage art", 4700076540037,
 "Rick and morty in space art", 4700103606405,
-"Rick and morty minimalist art", 4700150300805
+"Rick and morty minimalist art", 4700150300805,
 "Rick and Morty Poopybutthole poopy butt hole butthole art", 4700154790021,
 "Rick and Morty Silhouette art", 4700141617285,
 "Rick and Morty Silhouette 2 art", 4700084928645,
@@ -402,7 +402,7 @@ function runSearch() {
       searchResultCloser();      
     }
     if(nameArray.length === 1) {
-      searchResult1.style.display = "block";
+      // searchResult1.style.display = "block";
       searchResult2.style.display = "none";
       searchResult3.style.display = "none";
       searchResult4.style.display = "none";
@@ -411,8 +411,8 @@ function runSearch() {
       searchResult7.style.display = "none";
     }
     if(nameArray.length === 2) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
       searchResult3.style.display = "none";
       searchResult4.style.display = "none";
       searchResult5.style.display = "none";
@@ -420,53 +420,53 @@ function runSearch() {
       searchResult7.style.display = "none";
     }
     if(nameArray.length === 3) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
-      searchResult3.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
+      // searchResult3.style.display = "block";
       searchResult4.style.display = "none";
       searchResult5.style.display = "none";
       searchResult6.style.display = "none";
       searchResult7.style.display = "none";
     }
     if(nameArray.length === 4) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
-      searchResult3.style.display = "block";
-      searchResult4.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
+      // searchResult3.style.display = "block";
+      // searchResult4.style.display = "block";
       searchResult5.style.display = "none";
       searchResult6.style.display = "none";
       searchResult7.style.display = "none";
     }
     if(nameArray.length === 5) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
-      searchResult3.style.display = "block";
-      searchResult4.style.display = "block";
-      searchResult5.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
+      // searchResult3.style.display = "block";
+      // searchResult4.style.display = "block";
+      // searchResult5.style.display = "block";
       searchResult6.style.display = "none";
       searchResult7.style.display = "none";
     }
     if(nameArray.length === 6) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
-      searchResult3.style.display = "block";
-      searchResult4.style.display = "block";
-      searchResult5.style.display = "block";
-      searchResult6.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
+      // searchResult3.style.display = "block";
+      // searchResult4.style.display = "block";
+      // searchResult5.style.display = "block";
+      // searchResult6.style.display = "block";
       searchResult7.style.display = "none";
     }
     if(nameArray.length >= 7) {
-      searchResult1.style.display = "block";
-      searchResult2.style.display = "block";
-      searchResult3.style.display = "block";
-      searchResult4.style.display = "block";
-      searchResult5.style.display = "block";
-      searchResult6.style.display = "block";
-      searchResult7.style.display = "block";
+      // searchResult1.style.display = "block";
+      // searchResult2.style.display = "block";
+      // searchResult3.style.display = "block";
+      // searchResult4.style.display = "block";
+      // searchResult5.style.display = "block";
+      // searchResult6.style.display = "block";
+      // searchResult7.style.display = "block";
     }
     if(nameArray.length >= 1) {
-      searchBar.style.borderRadius = "10px 10px 0px 0px";
-      whiteness.style.borderRadius = "10px 10px 0px 0px";
+      // searchBar.style.borderRadius = "10px 10px 0px 0px";
+      // whiteness.style.borderRadius = "10px 10px 0px 0px";
     }
     if(searchEntryStr.length === 0) {
       searchResultCloser();
