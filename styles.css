@@ -1,6 +1,6 @@
 @font-face {
-    font-family: futura-pt-book;
-    src: url("FuturaPTBook.otf") format("opentype");
+    font-family: futura-bold;
+    src: url("FuturaPTBold.otf") format("opentype");
 }
 
 @font-face {
@@ -9,13 +9,18 @@
 }
 
 @font-face {
+    font-family: futura-pt-book;
+    src: url("FuturaPTBook.otf") format("opentype");
+}
+
+@font-face {
     font-family: futura-bold-oblique;
     src: url("FuturaPTBoldOblique.otf") format("opentype");
 }
 
 @font-face {
-    font-family: futura-bold;
-    src: url("FuturaPTBold.otf") format("opentype");
+    font-family: futura-medium-oblique;
+    src: url("FuturaPTMediumOblique.otf") format("opentype");
 }
 
 
@@ -23,11 +28,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;                            
-}
-
-button.shopify-buy__btn--close:focus {
-	border: 10px solid red;
-	outline-color: red!important;
 }
 
 html {
@@ -66,7 +66,6 @@ body {
 	z-index: 1;
 	top: -23px;
 	left: 3px;
-	/*font-size: 15px;*/
 	padding: 0px 50px 0px 60.5px;
 }
 
@@ -357,7 +356,6 @@ main {
 #breadcrumbs div {
 	display: inline-block;
 	padding-right: 5px;
-	/*font-size: 16px;*/
 	opacity: 0.43;
 	transition: all 0.1s ease;
 }
@@ -430,7 +428,6 @@ main {
 }
 
 #page-title-3 {
-	/*font-size: 16px;*/
 	line-height: 1.4;
 	opacity: 0.85;
 	font-weight: 400;
@@ -444,7 +441,6 @@ main {
 	font-size: 34px;
 	position: relative;
 	top: -44px;
-	font-style: italic;
 	text-align: center;
 	z-index: 2;
 	color: #1e3264;
@@ -510,6 +506,7 @@ main {
 	position: relative;
 	top: 250px;
 	padding-bottom: 25px;
+	font-family: futura-medium-oblique;
 }
 
 #hundreds-text {
@@ -659,7 +656,6 @@ main {
 
 button {
 	outline: 0;
-	/*font-size: 16px;*/
 }
 
 #shipping-circle-container {
@@ -674,7 +670,6 @@ button {
 #contact-circle:first-line, #shipping-circle:first-line {
 	font-family: futura-bold;
 }
-
 
 #shipping-circle-container:after {
 	content: "";
@@ -699,7 +694,6 @@ button {
 }
 
 #contact-circle-container {
-	/*overflow: hidden;*/
 	width: 207px;
 	height: 154px;
 	position: absolute;
@@ -731,7 +725,6 @@ button {
 }
 
 #instagram-circle-container {
-	/*overflow: hidden;*/
 	width: 207px;
 	height: 84px;
 	position: absolute;
@@ -764,9 +757,6 @@ button {
 }
 
 #shipping-circle {
-	/*background: rgb(0,0,100,0.1);*/
-	/*-webkit-backdrop-filter: blur(60px);*/
-	/*backdrop-filter: blur(60px);*/
 	top: 0px;
 	right: 0px;
 	line-height: 21px;
@@ -775,7 +765,6 @@ button {
 	position: absolute;
 	border-radius: 10px;
 	z-index: 3;
-	/*opacity: 0.7;*/
 	font-size: 16px;
 	clip-path: circle(20.5px at 92.5% 25%);
 	transition: clip-path 0.67s ease-in-out, background 1s ease-in-out;
@@ -783,17 +772,12 @@ button {
 }
 
 #contact-circle {
-	/*background: linear-gradient(to top, rgb(0,0,0,0.9) 0%, rgb(0,0,0,0) 90%, HSL(202, 54%, 76%));*/
-	/*-webkit-backdrop-filter: blur(30px);*/
-	/*backdrop-filter: blur(30px);*/
 	top: 0px;
-	/*right: -6px;*/
 	line-height: 21px;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	border-radius: 10px;
-	/*opacity: 0.7;*/
 	z-index: 2;
 	font-size: 16px;
 	clip-path: circle(20.5px at 89.5% 13.8%);
@@ -802,13 +786,11 @@ button {
 }
 
 #instagram-circle {
-	/*background: linear-gradient(to top, rgb(0,0,0,0.2), 0%, rgb(0,0,0,0), 90%, HSL(202, 54%, 76%));*/
 	top: -3px;
 	right: -12px;
 	line-height: 21px;
 	width: 100%;
 	height: 100%;
-	/*opacity: 0.7;*/
 	position: absolute;
 	z-index: 1;
 	font-size: 14.5px;
@@ -839,7 +821,6 @@ button {
 	right: 33px;
 }
 
-/*envelope*/
 .fa-envelope {
 	display: inline;
 	font-size: 16px;
@@ -847,19 +828,15 @@ button {
 	position: relative;
 	right: -1.7px;
 	top: -1px;
-	/*opacity: 0.9;*/
 }
 
-/*shipping*/
 .fa-shipping-fast {
 	font-size: 14px;
 	position: relative;
 	bottom: 1.6px;
 	right: 0.3px;
-	/*opacity: 0.9;*/
 }
 
-/*instagram*/
 .fab {
 	position: relative;
 	display: inline;
@@ -867,7 +844,6 @@ button {
 	color: #1e3264;
 	right: -4px;
 	top: 0.1px;
-	/*opacity: 0.9;*/
 }
 
 #shipping-circle:hover {
@@ -890,7 +866,6 @@ button {
 #new-in-text {
 	font-size: 34px;
 	position: relative;
-	font-style: italic;
 	text-align: center;
 	z-index: 2;
 	color: #1e3264;
@@ -959,7 +934,6 @@ button {
 	font-size: 34px;
 	position: relative;
 	top: 31px;
-	font-style: italic;
 	text-align: center;
 	z-index: 2;
 	color: #1e3264;
@@ -996,7 +970,6 @@ button {
 #back-a-step {
 	text-decoration: none;
 	color: #1e3264;
-	/*font-size: 15px;*/
 }
 
 #back-a-step-div {
@@ -1009,7 +982,6 @@ button {
 .search-result {
 	position: relative;
 	top: -1px;
- 	/*font-size: 17px;*/
  	padding: 10px 16px;
  	z-index: 5;
  	color: white;
@@ -1024,7 +996,6 @@ button {
 	background: rgb(0,0,0,0.17);
 	position: relative;
 	top: -1px;
- 	/*font-size: 17px;*/
  	width: 100%;
  	z-index: 5;
  	overflow: hidden;
@@ -1248,6 +1219,7 @@ textarea {
 	top: 250px;
 	padding-bottom: 25px;
 	left: -200px;
+	font-family: 
 }
 
 #hundreds-text2 {
@@ -1349,10 +1321,6 @@ h2 {
 	font-size: 22px;
 }
 
-/*#cookies-list {
-  list-style-type: circle;
-}*/
-
 .cookies-list li {
 	display: list-item;
 	list-style-position: inside;
@@ -1366,7 +1334,6 @@ h2 {
 #shipping-page-contents img {
 	width: 100%;
 	margin-top: 28px;
-	/*float: right;*/
 }
 
 #flex-box {
@@ -1377,15 +1344,12 @@ h2 {
 	padding-right: 63px;
 	width: 61.8%;
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 }
 
 #about-us-text img {
 	width: 310px;
-margin-left: -36px;
-	/*left: 0px;*/
-	/*right: 0px;*/
-	/*margin: auto;*/
+	margin-left: -36px;
 }
 
 #image-on-about-page {
@@ -1432,13 +1396,12 @@ margin-left: -36px;
 	display: none;
 }
 
-
-
 @media (max-width: 768px) {
+/*	main {
+		display: none;
+	}*/
 	#mobile-message {
-		display: flex;
-		align-items: center;
-		align-content: center;
+		display: block;
 		position: fixed;
 		background: linear-gradient(145deg,HSL(127,72%,85%),HSL(213,93%,64%));
 		top: 0px;
@@ -1449,11 +1412,10 @@ margin-left: -36px;
 		font-family: futura-bold-oblique;
 		font-size: 32px;
 		padding: 20px;
-		flex-wrap: wrap;
 	}
 	#mobile-message .text {
 		width: 100%;
-		margin-bottom: 40px;
+		margin: 40px 0px;
 	}
 	#mobile-message .smiley {
 		width: 100%;
