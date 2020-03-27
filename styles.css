@@ -1,34 +1,23 @@
-/*@import url('https://www.fontify.me/wf/5bac381a7c8ac1799347ca39ced42e79');*/
-
 @font-face {
     font-family: futura-pt-book;
     src: url("FuturaPTBook.otf") format("opentype");
 }
 
 @font-face {
-    font-family: domaine;
-    src: url("DomaineDisp-Semibold.otf") format("opentype");
+    font-family: futura;
+    src: url("FuturaPTMedium.otf") format("opentype");
 }
 
 @font-face {
-    font-family: bodoni24medium;
-    src: url("Bodoni-24-Medium.otf") format("opentype");
+    font-family: futura-bold-oblique;
+    src: url("FuturaPTBoldOblique.otf") format("opentype");
 }
 
 @font-face {
-    font-family: bodoni24bold;
-    src: url("Bodoni-24-Bold.otf") format("opentype");
+    font-family: futura-bold;
+    src: url("FuturaPTBold.otf") format("opentype");
 }
 
-@font-face {
-    font-family: bodoni36medium;
-    src: url("Bodoni-24-Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: bodoni36bold;
-    src: url("Bodoni-24-Bold.otf") format("opentype");
-}
 
 * {
 	padding: 0;
@@ -50,7 +39,7 @@ body {
 	overflow-x: hidden;
     margin: 0;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     margin:0; padding:0;
     z-index: -2;
 	font-family: futura, sans-serif;
@@ -77,14 +66,14 @@ body {
 	z-index: 1;
 	top: -23px;
 	left: 3px;
-	font-size: 15px;
+	/*font-size: 15px;*/
 	padding: 0px 50px 0px 60.5px;
 }
 
 #search-results-text-unsuccessful {
 	position: absolute;
 	text-align: center;
-	font-size: 22px;
+	font-size: 24px;
 	display: none;
 	width: 60%;
 	left: 50%;
@@ -107,7 +96,7 @@ body {
 }
 
 #sorry {
-	font-size: 26px;
+	font-size: 32px;
 	background: linear-gradient(145deg, #eea2a2 0%, #7ac5d8 78%, #1e3264 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -126,10 +115,10 @@ body {
 	border: none;
 	width: 100%;
 	border-radius: 10px;
-	background: linear-gradient(145deg, rgb(255,255,255,0.55), rgb(255,255,255,0.15));
+	background: linear-gradient(145deg, rgb(255,255,255,0.55), rgb(255,255,255,0.25));
  	color: white;
  	border: none;
- 	font-size: 17px;
+ 	font-size: 18px;
  	font-family: futura, sans-serif;
  	outline: 0;
  }
@@ -260,7 +249,7 @@ ul li a {
 	z-index: 3;
 	padding: 11px 0px 11px 9px;
 	background-color: white;
-	margin-top: 27px;
+	margin-top: 25px;
 	box-shadow: 0px 0px 30px -5px rgb(0,0,0,0.14);
 	visibility: hidden;
 	opacity: 0;
@@ -268,12 +257,12 @@ ul li a {
 }
 
 .submenu a {
-	font-size: 14.7px;
+	font-size: 17px;
 }
 
 #submenu2 {
 	left: 230px;
-	top: -27px;
+	top: -25px;
 	width: 239px;
 }
 
@@ -299,7 +288,7 @@ li:hover #submenu1, li:hover>#submenu2, li:hover #submenu4 {
 
 .nav-link {
 	width: 195px;
-	padding: 7.5px 0px 8px 0px;
+	padding: 7.5px 0px 7.5px 0px;
 	margin: -7.5px 0px -7.5px 0px;
 	display: inline-block;
 }
@@ -367,9 +356,9 @@ main {
 
 #breadcrumbs div {
 	display: inline-block;
-	padding-right: 8px;
-	font-size: 16px;
-	opacity: 0.35;
+	padding-right: 5px;
+	/*font-size: 16px;*/
+	opacity: 0.43;
 	transition: all 0.1s ease;
 }
 
@@ -393,7 +382,7 @@ main {
 #go-back {
 	text-decoration: none;
 	color: #1e3264;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .fa-chevron-left {
@@ -432,7 +421,7 @@ main {
 }
 
 #page-title-2 {
-	font-family: font92859;
+	font-family: futura-bold-oblique;
 	font-size: 36px;
 	margin-bottom: 0.875rem;
 	text-align: center;
@@ -441,7 +430,7 @@ main {
 }
 
 #page-title-3 {
-	font-size: 16px;
+	/*font-size: 16px;*/
 	line-height: 1.4;
 	opacity: 0.85;
 	font-weight: 400;
@@ -669,7 +658,7 @@ main {
 
 button {
 	outline: 0;
-	font-size: 16px;
+	/*font-size: 16px;*/
 }
 
 #shipping-circle-container {
@@ -680,6 +669,11 @@ button {
 	border-radius: 23px;
 	top: 30.4px;
 }
+
+#contact-circle:first-line, #shipping-circle:first-line {
+	font-family: futura-bold;
+}
+
 
 #shipping-circle-container:after {
 	content: "";
@@ -781,7 +775,7 @@ button {
 	border-radius: 10px;
 	z-index: 3;
 	/*opacity: 0.7;*/
-	font-size: 14.5px;
+	font-size: 16px;
 	clip-path: circle(20.5px at 92.5% 25%);
 	transition: clip-path 0.67s ease-in-out, background 1s ease-in-out;
 	padding: 10px 0px 10px 15px;
@@ -800,7 +794,7 @@ button {
 	border-radius: 10px;
 	/*opacity: 0.7;*/
 	z-index: 2;
-	font-size: 14.5px;
+	font-size: 16px;
 	clip-path: circle(20.5px at 89.5% 13.8%);
 	padding: 10px 0px 10px 15px;
 	transition: clip-path 0.67s ease-in-out, background 1s ease-in-out;
@@ -902,7 +896,7 @@ button {
 }
 
 #select-category-text {
-	font-size: 28px;
+	font-size: 32px;
 	position: relative;
 	top: 200px;
 	padding-bottom: 25px;
@@ -936,6 +930,7 @@ button {
 	font-family: futura, sans-serif;
 	transition: all 0.2s ease;
 	text-align: center;
+	font-size: 18px;
 }
 
 .categories-button:hover {
@@ -1000,7 +995,7 @@ button {
 #back-a-step {
 	text-decoration: none;
 	color: #1e3264;
-	font-size: 15px;
+	/*font-size: 15px;*/
 }
 
 #back-a-step-div {
@@ -1013,7 +1008,7 @@ button {
 .search-result {
 	position: relative;
 	top: -1px;
- 	font-size: 17px;
+ 	/*font-size: 17px;*/
  	padding: 10px 16px;
  	z-index: 5;
  	color: white;
@@ -1028,7 +1023,7 @@ button {
 	background: rgb(0,0,0,0.17);
 	position: relative;
 	top: -1px;
- 	font-size: 17px;
+ 	/*font-size: 17px;*/
  	width: 100%;
  	z-index: 5;
  	overflow: hidden;
@@ -1082,8 +1077,8 @@ footer {
 }
 
 #white-part-of-footer {
-	padding: 40px 0px 40px 0px;
-	font-size: 12px;
+	padding: 40px 0px 45px 0px;
+	font-size: 14px;
 	text-align: center;
 	background-color: white;
 	color: rgb(30,50,100,0.4);
@@ -1122,7 +1117,7 @@ footer a:hover {
 }
 
 #email-banner {
-	top: 270px;
+	top: 283px;
 	padding: 6px 30px;
 	position: absolute;
 	background-color: rgb(255,150,159);
@@ -1179,7 +1174,7 @@ textarea {
 	height: 40px;
 	width: 100px;
 	font-weight: 700;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: futura, sans-serif;
 	text-shadow:none;
 	position: relative;
