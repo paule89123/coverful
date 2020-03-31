@@ -59,6 +59,7 @@ body {
 	padding: 50px 110px 10px 110px;
 	background-color: white;
 	position: relative;
+	border-bottom: 24px solid white;
 }
 
 #search-results-text {
@@ -927,7 +928,7 @@ button {
 
 #shipping-page-contents {
 	position: relative;
-	top: -83px;
+	top: -107px;
 }
 
 #page-title-5 {
@@ -972,11 +973,21 @@ button {
 	color: #1e3264;
 }
 
+#back-a-step-div:hover {
+	opacity: 1;
+	transition: all 0.1s ease;
+}
+
 #back-a-step-div {
 	position: relative;
 	top: -71px;
 	left: 63.5px;
-	width: 121px;
+	opacity: 0.55;
+
+}
+
+#more-link {
+	cursor: pointer;
 }
 
 .search-result {
@@ -1049,7 +1060,7 @@ footer {
 }
 
 #white-part-of-footer {
-	padding: 40px 0px 45px 0px;
+	padding: 45px 0px 45px 0px;
 	font-size: 14px;
 	text-align: center;
 	background-color: white;
@@ -1341,32 +1352,29 @@ h2 {
 }
 
 #about-us-text {
-	padding-right: 63px;
-	width: 61.8%;
-	display: flex;
-	justify-content: center;
+	padding-left: 104px;
+	/*width: 600px;*/
+	margin-top: 40px;
+	/*background-color: black;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 
 #about-us-text img {
-	width: 310px;
-	margin-left: -36px;
+	width: 110px;
+	margin-top: 40px;
 }
 
 #image-on-about-page {
-	width: 49%;
-
+	width: 164%;
+	position: relative;
+	top: -15px;
+	/*background-color: green;*/
 }
 
 #shipping-page-text h3 {
 	margin: 27px 0px 9px 0px;
 }
-
-#est {
-	width: 14.44%;
-	margin-right: 63px;
-	opacity: 0.26;
-}
-
 
 #about-page-contents {
 	position: relative;
